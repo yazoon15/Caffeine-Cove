@@ -155,7 +155,7 @@ a {
     font-size: 100px;
     font-weight: 400;
     line-height: 1.3;
-    padding: 120px;
+    padding: 70px;
     margin: 0;
 }
 
@@ -183,7 +183,7 @@ a {
 
     width: auto;
     height: 300px;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 /* part Three------------------------*/
@@ -233,6 +233,13 @@ a {
     height: 400px;
 }
 
+.discrpion-salary img:hover {
+
+    transform: scale(1.1);
+    background: #e68900;
+
+}
+
 
 .discrpion-salary {
     display: flex;
@@ -254,24 +261,181 @@ a {
 
 }
 
-.Explain-salary h1{
+.Explain-salary h1 {
     color: #444444;
 }
 
-.underline{
-text-decoration: underline;
+.underline {
+    text-decoration: underline;
 }
 
-.Explain-salary h2{
+.Explain-salary h2 {
 
-color: #6F4E37;
+    color: #6F4E37;
 
 }
 
-.Explain-salary h3{
+.Explain-salary h3 {
     color: #4A4A4A;
 }
 
+/*part Five---------------------------------------------*/
+
+
+.location-discrption img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    display: block;
+    margin-bottom: 100px;
+
+}
+
+.location-discrption {
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+.insider {
+
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.info-container,
+.time-open,
+.info-contact-us {
+    position: relative;
+    text-align: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(8px);
+    padding: 35px 50px;
+    border-radius: 20px;
+    border: 1px solid rgba(196, 139, 78, .5);
+
+
+}
+
+.info-container:hover,
+.time-open:hover,
+.info-contact-us:hover {
+
+
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+#location i {
+    font-size: 45px;
+    color: #c48b4e;
+    margin-bottom: 15px;
+}
+
+#location h1 {
+    font-size: 32px;
+    margin-bottom: 10px 0;
+}
+
+#location p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* part six-------------------------------------------------*/
+
+.sign-up-info img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 250px;
+    display: block;
+    z-index: 1;
+
+
+}
+
+.sign-up-info{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+}
+
+.sign-up-descrption{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    padding: 40px;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    z-index: 2;
+    color: white;
+    gap: 50px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-up .row {
+
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+}
+
+.sign-up-descrption .form-descrption{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+#sign-up .sign-up-descrption h1{
+    font-size:60px;
+}
+
+.sign-up-descrption .form-descrption button{
+        font-size: 20px;
+        color: white;
+        background-color: #c48b4e;
+        padding: 10px;
+        border-radius: 20px;
+        margin-left: 20px;
+
+}
+
+.sign-up-descrption .form-descrption input{
+    font-size: 20px;
+    width:100%;
+}
+
+/*footer part--------------------------------------------*/
 #footer .footer-top {
     padding: 4rem 0px;
 }
