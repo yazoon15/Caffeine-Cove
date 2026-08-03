@@ -15,6 +15,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--favicon-->
     <link rel="shortcut icon" href="image/8f87412c-ff61-4cf3-b8d4-022bc55ffd0e.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -28,7 +32,8 @@
         <div class="header-content">
             <div class="behind-logo">
                 <a href="#"><i class="fa-solid fa-mug-hot"></i></a>
-                <h2>Caffeine Cove </h2>
+                <h2> <a href="index.html">Caffeine Cove </a>
+                </h2>
             </div>
 
             <nav class="header-links">
@@ -40,7 +45,16 @@
                 <a href="contact.html"> Contact</a>
 
             </nav>
+            <div class="button-location">
+
+                <button> <a href="contact.html"> Find Us</a> </button>
+            </div>
         </div>
+        <div class="button-location">
+
+            <button> Find Us</button>
+        </div>
+
     </div>
 
     <section id="Home">
@@ -124,7 +138,9 @@
                 <h1> Sign Up To Get The Lastest!</h1>
                 <div class="form-descrption">
                     <input type="email" name="email" id="name" placeholder="Email">
-                    <button> <FontAwesomeIcon :icon="byPrefixAndName.fas['arrow-right']" /> Send</button>
+                    <button>
+                        <FontAwesomeIcon :icon="byPrefixAndName.fas['arrow-right']" /> Send
+                    </button>
                 </div>
             </div>
         </div>
@@ -146,7 +162,11 @@
                         <ul>
                             <li><i class="fa-solid fa-location-dot"></i> Address : Jordan-Ammann</li>
                             <li><i class="fa-regular fa-envelope-open"></i> Email : yazan.misk@gmail.com</li>
-                            <li><i class="fa-solid fa-phone"></i> Phone : +00962798690208</li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                Phone :
+                                <a href="tel:+00962798690208">+00962798690208</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -164,11 +184,15 @@
                     <div class="col">
                         <h3> Follow Us On</h3>
                         <ul>
-                            <li> <i class="fa-brands fa-facebook"></i> Facebook</li>
-                            <li><i class="fa-brands fa-twitter"></i> Twitter</li>
-                            <li> <i class="fa-brands fa-youtube"></i> youtupe</li>
-                            <li><i class="fa-brands fa-instagram"></i>instgram</li>
-                            <li><i class="fa-brands fa-pinterest"></i>Pinterest</li>
+                            <li> <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/">Facebook</a>
+                            </li>
+                            <li><i class="fa-brands fa-twitter"></i><a href="https://www.Twitter.com/">Twitter</a> </li>
+                            <li> <i class="fa-brands fa-youtube"></i> <a href="https://www.youtube.com/">Youtupe</a>
+                            </li>
+                            <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/">Instgram</a>
+                            </li>
+                            <li><i class="fa-brands fa-pinterest"></i> <a
+                                    href="https://www.pinterest.com/">Pinterest</a></li>
 
                         </ul>
                     </div>

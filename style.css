@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
 
-:root {
+/*:root {
     --bg-color: #f1f1f1;
     --bg-secondary: #fbfbfb;
     --dark-gray: #333;
     --light-brown: #c7a17a;
     --black: #1f2226;
-}
+}*/
 
 body {
     margin: 0;
@@ -23,15 +23,15 @@ body {
     margin: auto;
 }
 
-.text-primary {
+/*.text-primary {
 
     color: #c7a17a;
 }
-
+*/
 h1,
 h2,
 h3 {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif, ;
 
 }
 
@@ -82,39 +82,39 @@ a {
 
 .header-content {
 
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 2;
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin-bottom: 450px;
+
+    width: 90%;
+    padding: 40px 5%;
 
 }
 
 .behind-logo {
     display: flex;
-    align-items: center;
-    margin-right: 400px;
-    color: #a97037;
+    justify-content: center;
+    gap: 12px;
+    color: white;
 }
 
 .behind-logo a {
-    color: #a97037;
+    color: white;
     font-size: 28px;
-    text-decoration: none;
 
+}
+
+.behind-logo a:hover {
+    transform: translateY(-10px) scale(1.05);
 }
 
 .behind-logo h2 {
     margin: 0;
-    color: #a97037;
-}
-
-.behind-logo h2:hover {
-    color: #fff;
-
+    color: white;
 }
 
 
@@ -124,13 +124,13 @@ a {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-size: 20px;
 }
 
 .header-links a {
 
-    color: white;
-    background-color: #fff;
-    padding: 0px 25px;
+    color: black;
+    padding: 0px 50px;
     text-decoration: none;
     border-radius: 20px;
 
@@ -143,6 +143,22 @@ a {
 
 }
 
+.button-location button {
+    position: fixed;
+    top: 20px;
+    background-color: #a97037;
+    color: white;
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+}
+
+.button-location button a {
+    color: white;
+    text-decoration: none;
+
+
+}
 
 
 /* Home page --------------------------------------------------------------------------------------*/
@@ -377,13 +393,13 @@ a {
 
 }
 
-.sign-up-info{
+.sign-up-info {
     position: relative;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
 }
 
-.sign-up-descrption{
+.sign-up-descrption {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -395,7 +411,7 @@ a {
     color: white;
     gap: 50px;
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 }
@@ -409,30 +425,30 @@ a {
 
 }
 
-.sign-up-descrption .form-descrption{
+.sign-up-descrption .form-descrption {
     display: flex;
     justify-content: space-between;
 
 
 }
 
-#sign-up .sign-up-descrption h1{
-    font-size:60px;
+#sign-up .sign-up-descrption h1 {
+    font-size: 60px;
 }
 
-.sign-up-descrption .form-descrption button{
-        font-size: 20px;
-        color: white;
-        background-color: #c48b4e;
-        padding: 10px;
-        border-radius: 20px;
-        margin-left: 20px;
-
-}
-
-.sign-up-descrption .form-descrption input{
+.sign-up-descrption .form-descrption button {
     font-size: 20px;
-    width:100%;
+    color: white;
+    background-color: #c48b4e;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+
+}
+
+.sign-up-descrption .form-descrption input {
+    font-size: 20px;
+    width: 100%;
 }
 
 /*footer part--------------------------------------------*/
@@ -493,67 +509,172 @@ a {
 
 
 /* about page---------------------------------------------------------------------------*/
+/*part one---------------------------------------*/
 
-.header {
+body{
+        background-color: black;
 
+}
+
+#About {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#About .header-about {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+#About .header-about-img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#About .header-contect-about {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    color: #222;
+
+    width: 90%;
+    padding: 40px 5%;
+
 }
 
-.behind-logo {
+#About .behind-logo-about {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 12px;
+    color: white;
 }
 
-.behind-logo a {
+#About .behind-logo-about a {
     color: white;
     font-size: 28px;
-    text-decoration: none;
 
 }
 
-.behind-logo h2 {
+#About .behind-logo-about a:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+#About .behind-logo-about h2 {
     margin: 0;
+    color: white;
 }
 
 
+#About .header-links-about {
 
-.header-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
 
-    color: #a97037;
-    padding: 0px 25px;
+#About .header-links-about a {
+
+    color: white;
+    padding: 30px 20px;
     text-decoration: none;
     border-radius: 20px;
 
 }
 
-.header-links a:hover {
+#About .header-links-about a:hover {
 
-    color: #a97037;
+    color: white;
+    background-color: #a97037;
 
 }
 
-#about #footer .footer-top {
-    padding: 6rem 0px;
+/*part two---------------------------------------------------------*/
+#About-descrption {
+    background-color: black;
 }
 
-#about .row {
-
+.about-container h1 {
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    justify-content: center;
     align-items: center;
+    margin-top: 80px;
+    color: white;
+}
+
+.about-container img {
+
+    width: auto;
+    height: 300px;
+    margin-top: 50px;
 
 }
 
-.row .about-container .item h3 {
+.about-container img:hover{
+        transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
-    margin-bottom: 5px;
 }
+
+
+
+.about-container .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 90px;
+    color: white;
+}
+
+/*part three-------------------------------------------------*/
+#mission {
+    padding: 20px
+
+
+}
+
+.mission h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+
+.mission .mission-vision-descrption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 90px;
+    color: white;
+
+
+}
+.mission .mission-vision-descrption .mision-descrption{
+    font-size: 20px;
+}
+
+
 
 /* menu page --------------------------------------------------------------------------------*/
 
@@ -595,7 +716,7 @@ a {
 
 .header-links a {
 
-    color: #a97037;
+    color: white;
     padding: 0px 25px;
     text-decoration: none;
     border-radius: 20px;
