@@ -250,7 +250,8 @@ a {
 
 .discrpion-salary img:hover {
 
-    transform: scale(1.1);
+    transform:rotatey(360deg);
+    transition: 2s;
     background: #e68900;
 
 }
@@ -432,7 +433,7 @@ a {
 }
 
 #sign-up .sign-up-descrption h1 {
-    color: black;
+    color: white;
     font-size: 60px;
 }
 
@@ -902,6 +903,7 @@ margin-left: 450px;}
     grid-template-columns: repeat(3, 1fr);
     margin-top: 6rem;
     gap: 6rem;
+    margin-bottom: 40px;
 }
 
 #testimonials .row .item {
@@ -932,6 +934,31 @@ margin-left: 450px;}
 
     line-height: 1.6;
 }
+
+.logo-animation a {
+    max-width: 70px;
+    height: 50px;
+    color: red;
+
+    position: absolute;
+    top: 600px;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    
+
+
+}
+
+@keyframes drive{
+    form{ transform: translateX(0px);}
+    to{ transform: translatex(1500px);}
+
+}
+
+
 
 /* contact page -----------------------------------------------------------------------------*/
 
