@@ -1,197 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
 
-/*:root {
-    --bg-color: #f1f1f1;
-    --bg-secondary: #fbfbfb;
-    --dark-gray: #333;
-    --light-brown: #c7a17a;
-    --black: #1f2226;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-
-    font-family: "Open Sans", sans-serif;
-    background-color: var(--bg-color);
-}
-*/
-/* utility classes */
-
 .container {
     max-width: 1200px;
     margin: auto;
 }
 
-/*.text-primary {
-
-    color: #c7a17a;
-}
-
-h1,
-h2,
-h3 {
-    font-family: "Oswald", sans-serif, ;
-
-}
-*/
 ul {
-
     list-style: none;
 }
 
 a {
-
     text-decoration: none;
 }
 
-
-
 .first {
-
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Header-----------------------------------------------------------------------------------------*/
+.page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcq6g18U0v1SvmMU6N-G8O5YwiwKDxU1cW5GvcwXg0w&s=10); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
+}
 
-* {
-
+html, body {
     margin: 0;
     padding: 0;
+    /* لا تضع background هنا، خليه بس في الـ div */
 }
 
-.header {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 90vh;
-}
-
-.header-video {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-.header-content {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 90%;
-    padding: 40px 5%;
-
-}
-
-.behind-logo {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    color: white;
-}
-
-.behind-logo a {
-    color: white;
-    font-size: 28px;
-
-}
-
-.behind-logo a:hover {
-    transform: translateY(-10px) scale(1.05);
-}
-
-.behind-logo h2 {
-    margin: 0;
-    color: white;
-}
-
-
-
-.dropdown {
-  position: relative;
-}
-
-.dropbtn {
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Dropdown content */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: black;
-  min-width: 200px;
-}
-
-/* Links inside dropdown content */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-
-/* Show the dropdown content on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-
-.header-links {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-size: 20px;
-}
-
-.header-links a {
-
-    color: white;
-    padding: 0px 50px;
-    text-decoration: none;
-    border-radius: 20px;
-
-}
-
-.header-links a:hover {
-
-    background-color: #a97037;
-
-}
-
-.button-location button {
+.page-background {
     position: fixed;
-    top: 20px;
-    background-color: #a97037;
-    color: white;
-    border-radius: 40px;
-    width: 200px;
-    height: 50px;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcq6g18U0v1SvmMU6N-G8O5YwiwKDxU1cW5GvcwXg0w&s=10); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
 }
 
-.button-location button a {
+html, body {
+    margin: 0;
+    padding: 0;
+    /* لا تضع background هنا، خليه بس في الـ div */
+}
+
+.cart-button,
+select,
+.btn-find  {
+    border-radius: 20px;
+    background-color: #a97037;
     color: white;
     text-decoration: none;
+    border: none;
 
-
+}
+.link-find{
+    color: white;
 }
 
 
@@ -200,28 +77,17 @@ a {
 
 
 
-#Home .home-content .contect-text h1 {
-    color: #a97037;
-    font-size: 100px;
-    font-weight: 400;
-    line-height: 1.3;
-    padding: 70px;
-    margin: 0;
-}
-
-#Home .home-content .contect-text p {
-    color: #a97037;
-    line-height: 1.3;
-    font-size: 25px;
-    font-weight: 200px;
-}
+ /*
+ 
 
 
-#Home .home-content .contect-text p:hover {
-    background-color: black;
-}
 
-.contect-text .discrpion {
+
+
+
+
+.discrpion {
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -229,17 +95,24 @@ a {
 }
 
 
-.contect-text img {
 
-    width: auto;
-    height: 300px;
-    margin-top: 50px;
+    
+*/
+
+.word{
+    padding: 100px 50px;
 }
+
+.word h3{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
 
 /* part Three------------------------*/
 
 
-.full-story {
+/*.full-story {
 
     display: flex;
     align-items: center;
@@ -251,9 +124,9 @@ a {
 
 .full-story img {
     width: auto;
-    height: 300px;
+    height: 200px;
     margin-top: 50px;
-    margin-left: -40px;
+    margin-left: 100px;
 }
 
 .Story-discrption {
@@ -262,6 +135,7 @@ a {
 
 .Story-discrption h1 {
     padding: 20px;
+    margin: 0 -20px;
 
 
 }
@@ -270,10 +144,23 @@ a {
 
     color: dimgrey;
 }
+*/
+
+
+
+
+.Story{
+    padding: 100px 50px;
+
+}
+.Story p{
+    margin-top: 20px;
+    font-size: 20px;
+}
 
 /*part Four---------------------------------------------*/
 
-#best-selary {
+/*#best-selary {
     padding: 80px;
 }
 
@@ -281,14 +168,8 @@ a {
 .discrpion-salary img {
     width: auto;
     height: 400px;
-}
-
-.discrpion-salary img:hover {
-
-    transform:rotatey(360deg);
-    transition: 2s;
-    background: #e68900;
-
+    border-radius: 30px;
+    margin: 200px 0;
 }
 
 
@@ -329,11 +210,26 @@ a {
 .Explain-salary h3 {
     color: #4A4A4A;
 }
+*/
+
+.best-selary {
+    padding: 50px 50px;
+}
+
+.best-selary h2,h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
+.best-selary img{
+    border-radius: 40px;
+}
 
 /*part Five---------------------------------------------*/
 
 
-.location-discrption img {
+/*.location-discrption img {
     position: absolute;
     top: 0;
     left: 0;
@@ -345,9 +241,12 @@ a {
     margin-bottom: 100px;
 
 }
+.image-navbar{
+    width: 100%;
+    height:300px;
 
+}
 .location-discrption {
-
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -356,9 +255,7 @@ a {
     margin-bottom: 150px;
     margin-top: 150px;
 }
-
 .insider {
-
     position: relative;
     z-index: 2;
     display: flex;
@@ -367,783 +264,281 @@ a {
     gap: 100px;
     height: 100%;
     flex-wrap: wrap;
-}
+    overflow-clip-margin: content-box;
+    overflow: clip;
 
+}
 .info-container,
 .time-open,
 .info-contact-us {
     position: relative;
     text-align: center;
     color: white;
+
+    width: 280px;
+    height: 220px;
+    box-sizing: border-box;
     background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(8px);
     padding: 35px 50px;
     border-radius: 20px;
-    border: 1px solid rgba(196, 139, 78, .5);
-
-
+    border: 1px solid rgba(13, 7, 1, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-.info-container:hover,
-.time-open:hover,
-.info-contact-us:hover {
-
-
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-
 #location i {
     font-size: 45px;
-    color: #c48b4e;
+    color: white;
     margin-bottom: 15px;
 }
 
 #location h1 {
     font-size: 32px;
     margin-bottom: 10px 0;
+    color: white;
 }
 
 #location p {
     font-size: 1.3rem;
     font-weight: 400;
+    color: white;
 }
 
-/* part six-------------------------------------------------*/
+/////////////////////////////
+#location img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 100px;
+}
 
-.sign-up-info img {
+.box-1 , .box-2 , .box-3{
+   color: black;
+    width: 180px;
+    height: 180px;
+}
+
+#location i {
+    font-size: 45px;
+    color: black;
+    margin-bottom: 15px;
+}
+#locationh1 {
+    font-size: 32px;
+    margin-bottom: 10px 0;
+    color: black;
+}
+
+#location p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: black;
+}
+*/
+#location {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+
+}
+
+#location img {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
-    height: 250px;
-    display: block;
+    height: 100%;
+    object-fit: cover;
     z-index: 1;
-
-
 }
 
-.sign-up-info {
-    position: relative;
+/* طبقة تعتيم فوق الصورة عشان النص يبين بوضوح */
+#location::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 40vh;
-}
-
-.sign-up-descrption {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 250px;
-    padding: 40px;
-    margin-bottom: 150px;
-    margin-top: 150px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 2;
-    color: white;
-    gap: 50px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
+}
+
+#location .container {
+    position: relative;
+    z-index: 3;
+}
+
+.big-box {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    gap: 30px;
 }
 
-#sign-up .row {
-
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    align-items: center;
-
-}
-
-.sign-up-descrption .form-descrption {
-    display: flex;
-    justify-content: space-between;
-
-
-}
-
-#sign-up .sign-up-descrption h1 {
-    color: white;
-    font-size: 60px;
-}
-
-.sign-up-descrption .form-descrption button {
-    font-size: 20px;
-    color: white;
-    background-color: #c48b4e;
-    padding: 10px;
-    border-radius: 20px;
-    margin-left: 20px;
-
-}
-
-.sign-up-descrption .form-descrption input {
-    font-size: 20px;
-    width: 100%;
-}
-
-/*footer part--------------------------------------------*/
-#footer .footer-top {
-    padding: 4rem 0px;
+.big-box .col {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    padding: 40px 25px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 
-
-
-#footer .footer-top {
-
-    background-color: #1f2226;
-    color: #f1f1f1;
-
-
-}
-
-
-#footer .footer-top .row {
-
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 3rem;
-}
-
-#footer .footer-top .row col h3 {
+.big-box i {
+    font-size: 2.2rem;
+    color: #d98e35; /* برتقالي القهوة */
     margin-bottom: 15px;
 }
 
-
-#footer .footer-top .row .col p {
-
-    width: 400px;
-    line-height: 1.6;
-    margin: 0 0 15px;
+.big-box h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-#footer .footer-top .row .col ul {
+.big-box p {
+    font-size: 1rem;
+    color: #e6e6e6;
     margin: 0;
-    padding: 0;
-}
-
-#footer .footer-top .row .col ul li {
-
-    margin: 10px 0;
-}
-
-#footer .footer-top .row .col ul li {
-
-    margin-right: 10px;
-}
-
-#footer .footer-top .row .col ul a {
-
-    color: #fbfbfb;
 }
 
 
-/* about page---------------------------------------------------------------------------*/
-/*part one---------------------------------------*/
+
+/* part six-------------------------------------------------*/
 
 
-
-#About {
-    margin: 0;
-    padding: 0;
-
-
-}
-
-#About .header-about {
+#sign-up {
     position: relative;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+
     overflow: hidden;
-    width: 100%;
-    height: 100vh;
+
+    padding: 50px 0;
+    margin: 100px 0;
 }
 
-#About .header-about-img {
-
+/* الصورة في الخلفية */
+#sign-up > img {
     position: absolute;
+
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     z-index: 1;
 }
 
-#About .header-contect-about {
+/* طبقة شفافة فوق الصورة */
+#sign-up::after {
+    content: "";
 
     position: absolute;
+
     top: 0;
     left: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    width: 90%;
-    padding: 40px 5%;
-
-}
-
-#About .behind-logo-about {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    color: white;
-}
-
-#About .behind-logo-about a {
-    color: white;
-    font-size: 28px;
-
-}
-
-#About .behind-logo-about a:hover {
-    transform: translateY(-10px) scale(1.05);
-}
-
-#About .behind-logo-about h2 {
-    margin: 0;
-    color: white;
-}
-
-
-#About .header-links-about {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-size: 20px;
-}
-
-#About .header-links-about a {
-
-    color: white;
-    padding: 30px 20px;
-    text-decoration: none;
-    border-radius: 20px;
-
-}
-
-#About .header-links-about a:hover {
-
-    color: white;
-    background-color: #a97037;
-
-}
-
-/*part two---------------------------------------------------------*/
-#About-descrption {
-    background-color: black;
-}
-
-#mission {
-    background-color: black;
-}
-
-#Brand-Value {
-    background-color: black;
-
-}
-
-.about-container h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.about-container img {
-
-    width: auto;
-    height: 300px;
-    margin-top: 50px;
-
-}
-
-.about-container img:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-
-}
-
-
-
-.about-container .message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin-bottom: 90px;
-    color: white;
-}
-
-/*part three-------------------------------------------------*/
-#mission {
-    padding: 20px
-}
-
-.mission h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 40px;
-}
-
-
-.mission .mission-vision-descrption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin-bottom: 90px;
-    color: white;
-
-
-}
-
-.mission .mission-vision-descrption .mision-descrption {
-    font-size: 20px;
-}
-
-/* prat four-----------------------------------------*/
-.container h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: white;
-    padding: 40px;
-}
-
-.brand-value {
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    padding: 40px;
-    gap: 130px;
-    
-}
-
-.Inclusitivity-descrption {
-
-    grid-column: 1/3;
-    justify-self: center;
-    width: 50%;
-
-
-}
-
-.brand-value p {
-    color: white;
-    font-size: 20px;
-}
-
-
-/* menu page --------------------------------------------------------------------------------*/
-
-
-
-body {
-    margin: 0;
-    background-image: url(image/back\ ground.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-
-}
-
-.header-menu {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-top: 50px;
-    gap: 40px;
-    padding: 60px;
-}
-
-.behind-logo-menu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.behind-logo-menu a {
-    color: black;
-    font-size: 28px;
-    text-decoration: none;
-
-}
-
-.behind-logo-menu h2 {
-    margin: 0;
-}
-
-
-
-.header-links-menu a {
-
-    color: black;
-    padding: 0px 25px;
-    text-decoration: none;
-    border-radius: 20px;
-
-}
-
-.header-links-menu a:hover {
-
-    color: #a97037;
-
-}
-
-/*The-list(hot drink)-----------------------------------*/
-
-.item-1 img,
-.item-2 img,
-.item-3 img,
-.item-4 img,
-.item-5 img,
-.item-6 img,
-.item-7 img,
-.item-8 img,
-.item-9 img,
-.item-10 img,
-.item-11 img,
-.item-12 img,
-.item-13 img,
-.item-14 img,
-.item-15 img,
-.item-16 img, .item-17 img {
-    width: 100%;
-    height: 100px;
-}
-
-.container h2 {
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
-.quantity {
-
-    padding: 20px;
-    margin-left: 100px;
-
-}
-
-.quantity span{
-    font-size: 15px;
-}
-
-.quantity button {
-font-size: 20px;
-
-}
-
-.menu-category {
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-
-
-}
-
-.gather {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
-
-
-
-.gather-margin {
-
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(8px);
-    padding: 35px 50px;
-    border-radius: 29px;
-    border: 1px solid rgba(196, 139, 78, 5);
-    margin-top: 20px;
-}
-
-.gather-margin:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-
-
-}
-
-.gather-margin details {
-    margin-bottom: 10px;
-}
-
-
-.cart {
-    width: 400px;
-    margin: 50px auto;
-    padding: 25px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-}
-
-.cart h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.cart-total {
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 2px solid #333;
-    text-align: right;
-    font-size: 20px;
-}
-
-.empty-cart {
-    text-align: center;
-    color: #777;
-}
-
-
-
-
-
-
-/* testimonials page -------------------------------------------------------------------------*/
-
-.header-test {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-top: 50px;
-    gap: 40px;
-    padding: 60px;
-}
-
-.behind-logo-test {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.behind-logo-test a {
-    color: black;
-    font-size: 28px;
-    text-decoration: none;
-
-}
-
-.behind-logo-test h2 {
-    margin: 0;
-}
-
-
-
-.header-links-test a {
-
-    color: black;
-    padding: 0px 25px;
-    text-decoration: none;
-    border-radius: 20px;
-
-}
-
-.header-links-test a:hover {
-
-    color: #a97037;
-
-}
-
-.heading h2{
-
-margin-left: 450px;}
-
-
-
-#testimonials .row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 6rem;
-    gap: 6rem;
-    margin-bottom: 40px;
-}
-
-#testimonials .row .item {
-    background-color: #ddd;
-    text-align: center;
-    padding: 25px 25px 20px;
-}
-
-#testimonials .row .item img {
-
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    margin-top: -50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-
-
-}
-
-
-#testimonials .row .item h3 {
-    margin: 20px 0 10px;
-}
-
-#testimonials .row .item p {
-
-    line-height: 1.6;
-}
-
-.logo-animation a {
-    max-width: 70px;
-    height: 50px;
-    color: red;
-
-    position: absolute;
-    top: 600px;
-    left: 0px;
-    animation-name: drive;
-    animation-duration: 7s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    
-
-
-}
-
-@keyframes drive{
-    form{ transform: translateX(0px);}
-    to{ transform: translatex(1500px);}
-
-}
-
-
-
-/* contact page -----------------------------------------------------------------------------*/
-
-
-.header-ccontact {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-top: 50px;
-    gap: 40px;
-    padding: 60px;
-}
-
-.behind-logo-ccontact {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.behind-logo-ccontact a {
-    color: black;
-    font-size: 28px;
-    text-decoration: none;
-
-}
-
-.behind-logo-ccontact h2 {
-    margin: 0;
-}
-
-
-
-.header-links-ccontact a {
-
-    color: black;
-    padding: 0px 25px;
-    text-decoration: none;
-    border-radius: 20px;
-
-}
-
-.header-links-ccontact a:hover {
-
-    color: #a97037;
-
-}
-
-
-
-
-#contact .row {
-    display: grid;
-    grid-template-columns: 2fr 1.4fr;
-    margin-top: 2rem;
-}
-
-#contact .row .contact-content {
-    background-color: #f1f1f1;
-    padding: 2rem;
-}
-
-#contact .row .contact-content h3 {
-    font-size: 26px;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-#contact .row .contact-content form input,
-textarea {
-    display: block;
-    width: 100%;
-    margin: 15px 0;
-    padding: 15px;
-    border: 1px solid #ccc;
-
-}
-
-#contact .row .contact-content form .btn-submit {
-    background-color: black;
-    width: 100%;
-    color: #fff;
-    padding: 20px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#contact .row .contact-content form .btn-submit:hover {
-    background-color: #a97037;
-}
-
-#contact .map iframe {
     width: 100%;
     height: 100%;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 2;
+}
+
+/* المحتوى فوق الصورة */
+#sign-up .container {
+    position: relative;
+
+    z-index: 3;
+}
+
+/* المحتوى */
+.sign-up-info {
+    width: 100%;
+}
+
+.sign-up-descrption {
+    text-align: center;
+}
+
+/* العنوان */
+.sign-up-descrption h1 {
+    color: white;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+/* الفورم */
+.form-descrption {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 0 auto;
+}
+
+/* input */
+.form-descrption input {
+    height: 55px;
+
+    flex: 1;
+
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+/* button */
+.form-descrption button {
+    height: 55px;
+
+    padding: 0 30px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #a97037;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.form-descrption button:hover {
+    background-color: #3b2415;
 }

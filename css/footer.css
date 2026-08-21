@@ -1,0 +1,110 @@
+
+/* ===== Footer ===== */
+#footer {
+    background-color: #2c1810; /* بني غامق يشبه القهوة */
+    color: #f5f0e8;
+    padding: 60px 0 30px;
+    font-family: inherit;
+}
+
+.footer-top .row {
+    justify-content: space-between;
+}
+
+.footer-top .col-12 h3 {
+    color: #d4a373; /* لون بيج/ذهبي يشبه لون القهوة بالحليب */
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+
+.footer-top .col-12 p {
+    color: #c9beae;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.footer-top ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-top ul li {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #c9beae;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-top ul li i {
+    color: #d4a373;
+    font-size: 15px;
+    width: 18px;
+    text-align: center;
+}
+
+.footer-top ul li a {
+    color: #c9beae;
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-top ul li a:hover {
+    color: #d4a373;
+    padding-left: 5px;
+}
+
+.footer-top  .Info-quick li a{
+    margin-left: 150px;
+} 
+
+/* أيقونات السوشيال ميديا */
+.footer-top .col-12:last-child ul li {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-top .col-12:last-child ul li:hover {
+    background-color: #d4a373;
+    transform: translateX(5px);
+}
+
+.footer-top .col-12:last-child ul li:hover a,
+.footer-top .col-12:last-child ul li:hover i {
+    color: #2c1810;
+}
+
+/* خط فاصل قبل النهاية */
+.footer-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .footer-top .col-12 {
+        text-align: center;
+    }
+
+    .footer-top .col-12 h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-top ul li {
+        justify-content: center;
+    }
+
+    .footer-top .Info-quick li a {
+        margin-right:150px;
+    }
+} 

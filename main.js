@@ -4,14 +4,16 @@ const products = document.querySelectorAll(".gather");
 
 const cartItems = document.querySelector(".cart-items");
 const grandTotalElement = document.querySelector(".grand-total");
-    const clearCartButton = document.querySelector(".clear-cart");
+const clearCartButton = document.querySelector(".clear-cart");
+const cartButton = document.getElementById("cart-button");
+const cartPanel = document.querySelector(".cart");
+const closeCart = document.getElementById("close-cart");
+const cartCount = document.querySelector(".cart-count");
+
+
 
 
 const cart = {};
-
-console.log(products);
-console.log("Number of products:", products.length);
-
 
 // ====================
 // Products
@@ -65,35 +67,28 @@ products.forEach(product => {
                 delete cart[name];
 
             } else {
-
                 cart[name].quantity = quantity;
-
             }
 
             updateCart();
-
         }
-
     });
-
 });
 
-clearCartButton.addEventListener("click", () => {
+if (clearCartButton) {
+    clearCartButton.addEventListener("click", () => {
 
-    // حذف كل المنتجات
-    Object.keys(cart).forEach(name => {
-        delete cart[name];
+        Object.keys(cart).forEach(name => {
+            delete cart[name];
+        });
+
+        products.forEach(product => {
+            product.querySelector(".quantity-number").textContent = "0";
+        });
+
+        updateCart();
     });
-
-    // تصفير الكميات
-    products.forEach(product => {
-        product.querySelector(".quantity-number").textContent = "0";
-    });
-
-    updateCart();
-
-});
-
+} 
 
 // ====================
 // Update Cart
@@ -119,62 +114,66 @@ function updateCart() {
                 Your cart is empty
             </p>
         `;
-
     }
-
 
     // Display products
     items.forEach(([name, item]) => {
 
         const total = item.price * item.quantity;
-
         grandTotal += total;
 
-
+        // inset remove button
         const cartItem = document.createElement("div");
-
         cartItem.classList.add("cart-item");
-
-
         cartItem.innerHTML = `
             <span>${name} × ${item.quantity}</span>
             <span>$${total.toFixed(2)}
-            <button class="remove-item"></button>
+            <button class="remove-item">×</button>
             </span>
         `;
 
-
+        // remove 
         cartItems.appendChild(cartItem);
-
         const removeButton = cartItem.querySelector(".remove-item");
-
         removeButton.addEventListener("click", () => {
-
             delete cart[name];
-
-            // تصفير الكمية في بطاقة المنتج
             products.forEach(product => {
-
                 const productName =
                     product.querySelector(".details h3").textContent.trim();
-
                 if (productName === name) {
-
                     product.querySelector(".quantity-number").textContent = "0";
-
                 }
-
             });
 
             updateCart();
 
         });
-
     });
-
 
     // Display grand total
     grandTotalElement.textContent = grandTotal.toFixed(2);
 
+
+    let totalItems = 0;
+
+Object.values(cart).forEach(item => {
+    totalItems += item.quantity;
+});
+
+cartCount.textContent = totalItems;
 }
+
+
+if (cartButton && cartPanel) {
+    cartButton.addEventListener("click", () => {
+        cartPanel.classList.toggle("active");
+    });
+}
+
+if (closeCart && cartPanel) {
+    closeCart.addEventListener("click", () => {
+        cartPanel.classList.remove("active");
+    });
+}
+
 

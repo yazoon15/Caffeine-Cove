@@ -1,0 +1,31 @@
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#testimonials{
+    margin-bottom: 100px;
+}
+
+.heading h2 {
+
+    margin-left: 50px;
+}
+
+.text-center img{
+    border-radius: 100%;
+}
+.carousel-indicators{
+    margin-bottom: 30px;
+}

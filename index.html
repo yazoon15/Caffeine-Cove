@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Caffeine Cove</title>
 
@@ -15,7 +18,8 @@
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--favicon-->
-<link rel="shortcut icon" href="image/caffeine_cove_logo.png" type="image/png">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="image/caffeine_cove_logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -25,136 +29,414 @@
 
 <body>
 
-    <div class="header">
-        <video class="header-video" autoplay loop muted width="100%">
-            <source src="video/اريده_بدون_صوت_واريد_اضافه_صور.mp4" type="video/mp4">
-        </video>
+    <div class="page-background"></div>
 
-        <div class="header-content">
-            <div class="behind-logo">
-                <a href="#"><i class="fa-solid fa-mug-hot"></i></a>
-                <h2> <a href="index.html">Caffeine Cove </a>
-                </h2>
-            </div>
 
-            <nav class="header-links ">
+    <div class="container text-center">
 
-                <a href="index.html"> Home</a>
-                <a href="about.html"> About </a>
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="header">
 
-                <div class="dropdown">
-                    <button class="dropbtn"> Menu</button>
-                    <div class="dropdown-content">
-                        <a href="menu.html">Hot drink</a>
-                        <a href="menu.html">cold drink</a>
-                        <a href="menu.html"> bakery</a>
+                    <video class="header-video" autoplay loop muted width="100%">
+                        <source src="video/اريده_بدون_صوت_واريد_اضافه_صور.mp4" type="video/mp4">
+                    </video>
+                    <div class="container-Homepage">
+                        <div class="row">
+
+                            <nav class="navbar navbar-expand-lg bg-body-secondary">
+
+                                <div class="container-fluid">
+
+                                    <!-- Logo -->
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="image/coffeine_cove_logo_white.png" alt="Caffeine Cove" width="200"
+                                            height="50">
+                                    </a>
+
+                                    <!-- Hamburger Button -->
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+
+                                        <span class="navbar-toggler-icon"></span>
+
+                                    </button>
+
+
+                                    <!-- Navbar Content -->
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                        <!-- Links -->
+                                        <ul class="navbar-nav mx-auto gap-3">
+
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="index.html">
+                                                    Home
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="about.html">
+                                                    About
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+
+                                                <a class="nav-link dropdown-toggle" href="menu.html" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Menu
+                                                </a>
+
+                                                <ul class="dropdown-menu">
+
+                                                    <li>
+                                                        <a class="dropdown-item" href="menu.html#hot-drinks">
+                                                            Hot Drinks
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a class="dropdown-item" href="menu.html#cold-drinks">
+                                                            Cold Drinks
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a class="dropdown-item" href="menu.html#bakery">
+                                                            Bakery
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="testimonials.html">
+                                                    Testimonials
+                                                </a>
+                                            </li>
+
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="contact.html">
+                                                    Contact
+                                                </a>
+                                            </li>
+
+                                        </ul>
+
+
+                                        <!-- Buttons -->
+                                        <form class="d-flex gap-2" role="search">
+
+                                            <button class="btn-find" type="button">
+                                                <a class="link-find" href="contact.html">
+                                                    FindUs
+                                                </a>
+                                            </button>
+
+                                            <button id="cart-button" class="cart-button" type="button"
+                                                aria-label="Open cart">
+
+                                                <i class="fa-solid fa-cart-shopping"></i>
+
+                                                <span class="cart-count">0</span>
+
+                                            </button>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                            </nav>
+                        </div>
                     </div>
                 </div>
-                <a href="testimonials.html"> Testimonials</a>
-                <a href="contact.html"> Contact</a>
 
-            </nav>
-            <div class="button-location">
-
-                <button> <a href="contact.html"> Find Us</a></button>
             </div>
         </div>
 
+        <section class="word">
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-9 col-sm-12">
+                                <h3 data-text="TIME DISCOVER COFFEE ">TIME DISCOVER COFFEE </h3>
+                            </div>
+                            <div class=" col-lg-3 col-sm-12 ">
+                                <img width="auto" height="200px" src="image/coffeine_cove_logo_round_orange.png"
+                                    alt="Caffeine Cove Logo">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+        </section>
+
+
+        <section class="Story">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4">
+                                <img img width="auto" height="200px"  src="image/coffeine_cove_logo_round_orange.png" alt="">
+                            </div>
+                            <div class=" col-lg-9 col-md-4 ms-auto">
+                                <h1>The start of the journey </h1>
+                                <p class="fw-medium">Caffeine Cove began with a simple passion for a perfect cup of
+                                    coffee that brings
+                                    people
+                                    together.
+                                    In 2020, we opened our doors as a small café with a big dream: to serve the finest
+                                    coffee
+                                    beans
+                                    in a
+                                    warm,
+                                    welcoming space that feels like home.
+                                    Over time, we grew into a daily destination for coffee lovers seeking rich flavor
+                                    and an
+                                    unforgettable
+                                    experience.
+                                    Today, we still carry the same passion we started with, one cup at a time.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+        </section>
+
+        <section class="best-selary">
+            <div class="container text-center">
+                <div class="col-lg-12">
+                    <div class="row align-items-center  justify-content-space-between">
+                        <div class="col-lg-8  col-sm-12 ">
+                            <h2> Today's Featured Coffee </h2>
+                            <h3> <span class="text-decoration-underline">AMERICANO</span> </h3>
+                            <p class="fw-semibold"> Americano coffee is made by adding hot water to a shot of espresso.
+                                It has a smooth, rich flavor that is less strong than espresso.
+                                Many people enjoy it because it is simple, low in calories, and full of coffee aroma.
+                            </p>
+                        </div>
+                        <div class="col-lg-2  col-sm-12 ">
+                            <img width="auto" height="250px" src="image/Americano-Cup.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <img src="image/wooden-background_24972-623.avif" alt="">
+
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="big-box">
+                        <div class=" box-1 col">
+                            <i class="fa-solid fa-location-pin"></i>
+                            <h1>Location</h1>
+                            <p>Mecca Street</p>
+                        </div>
+                        <div class="box-2 col order-5">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                            <h1>We're Open</h1>
+                            <p>Weekdays 7.00Am-12.00Am</p>
+                        </div>
+                        <div class=" box-3 col order-1">
+                            <i class="fa-regular fa-envelope"></i>
+                            <h1>Contact Us</h1>
+                            <p>Phone:0798690208</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="sign-up">
+            <img src="image/secrit-logo.png" alt="background">
+
+            <div class="container">
+                <div class="row">
+                    <div class="sign-up-info ">
+                        <div class="col-lg-12">
+                            <div class="sign-up-descrption">
+                                <div class="col-lg-12  col-sm-12">
+                                    <h1> Sign Up To Get The Lastest!</h1>
+                                </div>
+                                <div class="form-descrption col-lg-10 col-sm-12">
+                                    <input type="email" name="email" id="name" placeholder=" Enter Your Email">
+                                    <button>
+                                        <FontAwesomeIcon :icon="byPrefixAndName.fas['arrow-right']" /> Send
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+        <footer id="footer">
+
+            <div class="footer-top">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-4">
+                            <h3>About Info</h3>
+                            <p>At Caffeine Cove, we serve handcrafted coffee and freshly prepared beverages in a cozy
+                                and relaxing environment</p>
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i> Address : Jordan-Ammann</li>
+                                <li><i class="fa-regular fa-envelope-open"></i> Email : yazan.misk@gmail.com</li>
+                                <li><i class="fa-solid fa-phone"></i> Phone : <a
+                                        href="tel:+00962798690208">+00962798690208</a> </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-4">
+                            <h3>Quick Info</h3>
+                            <ul class="Info-quick">
+                                <li> <a href="index.html"> Home</a></li>
+                                <li><a href="about.html"> About</a> </li>
+                                <li> <a href="menu.html"> Menu</a></li>
+                                <li> <a href="testimonials.html"> Testimonials</a></li>
+                                <li> <a href="contact.html"> Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-4 ">
+                            <h3> Follow Us On</h3>
+                            <ul>
+                                <li> <i class="fa-brands fa-facebook"></i> <a
+                                        href="https://www.facebook.com/">Facebook</a></li>
+                                <li><i class="fa-brands fa-twitter"></i><a href="https://www.Twitter.com/">Twitter</a>
+                                </li>
+                                <li> <i class="fa-brands fa-youtube"></i> <a href="https://www.youtube.com/">Youtupe</a>
+                                </li>
+                                <li><i class="fa-brands fa-instagram"></i> <a
+                                        href="https://www.instagram.com/">Instgram</a></li>
+                                <li><i class="fa-brands fa-pinterest"></i> <a
+                                        href="https://www.pinterest.com/">Pinterest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </footer>
 
     </div>
 
-    <section id="Home">
-        <div class="home-content">
-            <div class="contect-text">
-                <div class="discrpion">
-                    <h1> TIME DISCOVER COFFEE HOUSE </h1>
-                    <img src="image/caffeine_cove_logo.png" alt="">
 
+
+
+    <!-- <div class="container">
+
+        <section id="Story">
+            <div class="full-story">
+                 <img src="image/coffeine_cove_logo_round_orange.png" alt="">
+
+                <div class="Story-discrption">
+                    <h1>The start of the journey </h1>
+                    <h3>Caffeine Cove began with a simple passion for a perfect cup of coffee that brings people
+                        together.
+                        In 2020, we opened our doors as a small café with a big dream: to serve the finest coffee beans
+                        in a
+                        warm,
+                        welcoming space that feels like home.
+                        Over time, we grew into a daily destination for coffee lovers seeking rich flavor and an
+                        unforgettable
+                        experience.
+                        Today, we still carry the same passion we started with, one cup at a time.
+                    </h3>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="Story">
-        <div class="full-story">
-            <img src="image/caffeine_cove_logo.png" alt="">
-
-            <div class="Story-discrption">
-                <h1> The start of the journey </h1>
-                <h3>Caffeine Cove began with a simple passion for a perfect cup of coffee that brings people together.
-                    In 2020, we opened our doors as a small café with a big dream: to serve the finest coffee beans in a
-                    warm,
-                    welcoming space that feels like home.
-                    Over time, we grew into a daily destination for coffee lovers seeking rich flavor and an
-                    unforgettable
-                    experience.
-                    Today, we still carry the same passion we started with, one cup at a time.
-                </h3>
-            </div>
-        </div>
-    </section>
-
-    <section id="best-selary">
-        <div class="discrpion-salary">
-            <div class="Explain-salary">
-                <h1> Today's Featured Coffee </h1>
-                <h2> <span class="underline">AMERICANO</span> </h2>
-                <h3> Americano coffee is made by adding hot water to a shot of espresso.
-                    It has a smooth, rich flavor that is less strong than espresso.
-                    Many people enjoy it because it is simple, low in calories, and full of coffee aroma. </h3>
-            </div>
-            <img src="image/Americano-Cup.jpg" alt="">
-        </div>
-    </section>
-
-    <section id="location">
-        <div class="location-discrption">
-
-            <img src="image/Nk2VxQn1YHsnm62O1exVk34KWqTh8KyDvWwhoKrzIUk_v_8LK29u40sdaBf0Frws40Kz7d0c4kGmSMmB4Uz3r5pm_FSLswnxOq6U0OMJ3R5e78ARyKlqKl4ONb9w1CM371kdSomLGghjEzudcNJ60k6QpPu8pxro_dOtGC8hUB-LEE57lO-VjW2GneKdJRGp.jpg"
-                alt="">
-
-            <div class="insider">
-
-                <div class="info-container">
-                    <a href="#"><i class="fa-solid fa-location-pin"></i></a>
-                    <h1>Location</h1>
-                    <p>-Mecca Street-</p>
+        <section id="best-selary">
+            <div class="discrpion-salary">
+                <div class="Explain-salary">
+                    <h1> Today's Featured Coffee </h1>
+                    <h2> <span class="underline">AMERICANO</span> </h2>
+                    <h3> Americano coffee is made by adding hot water to a shot of espresso.
+                        It has a smooth, rich flavor that is less strong than espresso.
+                        Many people enjoy it because it is simple, low in calories, and full of coffee aroma. </h3>
                 </div>
+                <img src="image/Americano-Cup.jpg" alt="">
+            </div>
+        </section>
 
-                <div class="time-open">
-                    <a href="#"><i class="fa-solid fa-mug-saucer"></i></a>
-                    <h1>We're Open</h1>
-                    <p>Weekdays 7.00Am-12.00Am</p>
-                </div>
+        <section id="location">
+            <div class="location-discrption">
+                <img src="image/wooden-background_24972-623.avif" alt="">
 
-                <div class="info-contact-us">
-                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                    <h1>Contact Us</h1>
-                    <p>Phone:0798690208</p>
+                <div class="insider">
 
+                    <div class="info-container">
+                        <i class="fa-solid fa-location-pin"></i>
+                        <h1>Location</h1>
+                        <p>Mecca Street</p>
+                    </div>
+
+                    <div class="time-open">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <h1>We're Open</h1>
+                        <p>Weekdays 7.00Am-12.00Am</p>
+                    </div>
+
+                    <div class="info-contact-us">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h1>Contact Us</h1>
+                        <p>Phone:0798690208</p>
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="sign-up">
-        <div class="sign-up-info">
-            <img src="image/background-taditional.png" alt="background">
-            <div class="sign-up-descrption">
-                <h1> Sign Up To Get The Lastest!</h1>
+        <section id="sign-up">
+            <div class="sign-up-info">
+                <img src="image/secrit-logo.png" alt="background">
+                <div class="sign-up-descrption">
+                    <h1> Sign Up To Get The Lastest!</h1>
                 <div class="form-descrption">
                     <input type="email" name="email" id="name" placeholder="Email">
                     <button>
                         <FontAwesomeIcon :icon="byPrefixAndName.fas['arrow-right']" /> Send
                     </button>
-
+ 
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
-    <!-- footer start -->
+   footer start 
     <footer id="footer">
 
         <div class="footer-top">
@@ -210,11 +492,12 @@
 
 
 
+-->
 
 
-    <!-- footer end -->
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
