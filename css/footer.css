@@ -7,11 +7,8 @@
     width: 100%;
     color: white;
 }
-.footer-top .row {
-    justify-content: space-between;
-}
 
-.footer-top .col-12 h3 {
+.footer-top .col-lg-4  h3 {
     color: #d4a373;
     /* لون بيج/ذهبي يشبه لون القهوة بالحليب */
     font-size: 20px;
@@ -19,13 +16,20 @@
     margin-bottom: 20px;
     position: relative;
     padding-bottom: 12px;
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.col-lg-4 .line-quick{
+    margin-left: 140px;
+        font-size: 20px;
+
 }
 
 
-.footer-top .col-12 p {
+
+.footer-top .col-lg-4 p {
     color: #c9beae;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.8;
     margin-bottom: 20px;
 }
@@ -38,7 +42,7 @@
 
 .footer-top ul li {
     margin-bottom: 14px;
-    font-size: 14px;
+    font-size: 20px;
     color: #c9beae;
     display: flex;
     align-items: center;
@@ -52,17 +56,24 @@
     text-align: center;
 }
 
+.follow-link{
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    gap: 16px;
+}
+
 .footer-top ul li a {
     color: #c9beae;
     text-decoration: none;
     transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
-.footer-top ul li a:hover {
+/*.footer-top ul li a:hover {
     color: #d4a373;
     padding-left: 5px;
 }
-
+*/
 .footer-top .Info-quick li a {
     margin-left: 150px;
 }
@@ -70,8 +81,8 @@
 /* أيقونات السوشيال ميديا */
 .footer-top .col-12:last-child ul li {
     background-color: rgba(255, 255, 255, 0.05);
-    padding: 10px 15px;
-    border-radius: 8px;
+    padding: 10px 8px;
+    border-radius: 20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -92,19 +103,24 @@
     margin-bottom: 20px;
 }
 
+
+
+
 @media (max-width: 767px) {
-    .footer-top .col-12 {
+    .footer-top .col-lg-4 {
         text-align: center;
     }
 
-    .footer-top .col-12 h3::after {
-        left: 50%;
-        transform: translateX(-50%);
+    .footer-top .col-sm-12 .line-quick{
+
+        margin-right: 140px;
     }
 
-    .footer-top ul li {
+    .footer-top ul li , .follow-link{
         justify-content: center;
     }
+
+
 
     .footer-top .Info-quick li a {
         margin-right: 150px;

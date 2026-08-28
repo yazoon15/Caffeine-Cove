@@ -1,444 +1,360 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/about-us.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="style.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <title>Caffeine Cove</title>
 
     <!-- font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
-        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--favicon-->
-    <link rel="shortcut icon" href="image/caffeine_cove_logo.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
-        rel="stylesheet">
+    <link
+      rel="shortcut icon"
+      href="image/caffeine_cove_logo.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
+  <body>
+    <div class="page-background"></div>
 
-<body>
+    <div class="image-about">
+      <img
+        src="image/top-5-creative-ideas-for-small-coffee-shop-interior-design.webp"
+        class="object-fit-scale border rounded"
+        alt=""
+      />
+    </div>
 
-    <div class="image-about ">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="image/coffeine_cove_logo_white.png"
+              alt="Caffeine Cove"
+              width="200"
+              height="50"
+            />
+          </a>
 
-                        <img src="image/top-5-creative-ideas-for-small-coffee-shop-interior-design.webp"
-                            class="object-fit-scale border rounded" alt="">
+          <!-- Hamburger Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Content -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Links -->
+            <ul class="navbar-nav mx-auto gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"> Home </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html"> About </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Menu
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="menu.html#hot-drinks">
+                      Hot Drinks
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="menu.html#cold-drinks">
+                      Cold Drinks
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item" href="menu.html#bakery">
+                      Bakery
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="testimonials.html">
+                  Testimonials
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html"> Contact </a>
+              </li>
+            </ul>
+
+            <!-- Buttons -->
+            <form class="d-flex gap-2" role="search">
+              <button class="btn-find" type="button">
+                <a class="link-find" href="contact.html"> FindUs </a>
+              </button>
+
+              <button
+                id="cart-button"
+                class="cart-button"
+                type="button"
+                aria-label="Open cart"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span class="cart-count">0</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="About-descrption">
+      <div class="container">
+        <div class="row col-lg-12 col-md-4 col-sm-12">
+          <div class="logo-about col-lg-3 col-md-4">
+            <img
+              width="auto"
+              height="200px"
+              src="image/coffeine_cove_logo_round_orange.png"
+              alt=""
+            />
+          </div>
+          <div class="message col-lg-9 col-md-4 ms-auto">
+            <h1 class="lineone-about">BRAND MESSAGE</h1>
+            <p class="fw-medium">
+              At Caffeine Cove, every cup is crafted to inspire comfort,
+              connection, and unforgettable moments. We believe great coffee
+              brings people together, creating a warm space where every visit
+              feels like home.
+            </p>
+          </div>
+        </div>
       </div>
+    </section>
 
+    <section id="mission">
+      <div class="container text-center">
+        <div class="row col-lg-12">
+          <div class="col col-lg-6">
+            <h1 class="head-mission">MISSION</h1>
+          </div>
+          <div class="col col-lg-6">
+            <h1 class="head-vision">VISION</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-6 col-md-6">
+            <p class="text-light">
+              Our mission is to serve exceptional coffee made from carefully
+              selected beans while creating a welcoming atmosphere where every
+              guest feels valued and every visit becomes a memorable experience.
+            </p>
+          </div>
+          <div class="col col-lg-6 col-md-6">
+            <p class="text-light">
+              Our vision is to become a trusted coffee destination, recognized
+              for quality, innovation, and a passion for bringing people
+              together through outstanding coffee and genuine hospitality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="container text-center">
+    <section id="Brand-Value">
+      <div class="container text-center">
+        <h1>B R A N D V A L U E</h1>
 
-                <header>
-                    <nav class="navbar navbar-expand-lg bg-body-secondary">
-    
-                        <div class="container-fluid">
-    
-                            <!-- Logo -->
-                            <a class="navbar-brand" href="index.html">
-                                <img src="image/coffeine_cove_logo_white.png" alt="Caffeine Cove" width="200" height="50">
-                            </a>
-    
-                            <!-- Hamburger Button -->
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-    
-                                <span class="navbar-toggler-icon"></span>
-    
-                            </button>
-    
-    
-                            <!-- Navbar Content -->
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-                                <!-- Links -->
-                                <ul class="navbar-nav mx-auto gap-3">
-    
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="index.html">
-                                            Home
-                                        </a>
-                                    </li>
-    
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="about.html">
-                                            About
-                                        </a>
-                                    </li>
-    
-                                    <li class="nav-item dropdown">
-    
-                                        <a class="nav-link dropdown-toggle" href="menu.html" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Menu
-                                        </a>
-    
-                                        <ul class="dropdown-menu">
-    
-                                            <li>
-                                                <a class="dropdown-item" href="menu.html#hot-drinks">
-                                                    Hot Drinks
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a class="dropdown-item" href="menu.html#cold-drinks">
-                                                    Cold Drinks
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a class="dropdown-item" href="menu.html#bakery">
-                                                    Bakery
-                                                </a>
-                                            </li>
-    
-                                        </ul>
-    
-                                    </li>
-    
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="testimonials.html">
-                                            Testimonials
-                                        </a>
-                                    </li>
-    
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="contact.html">
-                                            Contact
-                                        </a>
-                                    </li>
-    
-                                </ul>
-    
-    
-                                <!-- Buttons -->
-                                <form class="d-flex gap-2" role="search">
-    
-                                    <button class="btn-find" type="button">
-                                        <a class="link-find" href="contact.html">
-                                            FindUs
-                                        </a>
-                                    </button>
-    
-                                    <button id="cart-button" class="cart-button" type="button" aria-label="Open cart">
-    
-                                        <i class="fa-solid fa-cart-shopping"></i>
-    
-                                        <span class="cart-count">0</span>
-    
-                                    </button>
-    
-                                </form>
-    
-                            </div>
-    
-                        </div>
-    
-                    </nav>
-                </header>
-
-
-
-        <section id="About-descrption">
-
-            <div class="container text-center">
-                <h1  class="text-light"> BRAND MESSAGE</h1>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-lg-5 col-md-4">
-                                <img width="auto" height="200px" src="image/coffeine_cove_logo_round_orange.png" alt="">
-                            </div>
-                            <div class="message col-lg-6 col-md-4 ms-auto">
-                                <p class="fw-medium">At Caffeine Cove, every cup is crafted to inspire comfort,
-                                    connection, and
-                                    unforgettable
-                                    moments.
-                                    We believe great coffee brings people together, creating a warm space where
-                                    every
-                                    visit
-                                    feels
-                                    like home.
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-
-
-
-        <section id="mission">
-
-            <div class="container text-center">
-                <div class="row ">
-                    <div class="col col-lg-6  ">
-                        <h2 class="head-mission"> MISSION </h2>
-
-                    </div>
-                    <div class="col  col-lg-6  ">
-                        <h2 class="head-vision">VISION</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col col-lg-6 col-md-4">
-                        <p class="text-light "> Our mission is to serve exceptional coffee made from carefully selected
-                            beans while
-                            creating
-                            a
-                            welcoming atmosphere where every guest feels valued and every visit becomes a memorable
-                            experience.
-                        </p>
-                    </div>
-                    <div class="col col-lg-6 col-md-4">
-                        <p class="text-light ">Our vision is to become a trusted coffee destination, recognized for
-                            quality, innovation,
-                            and
-                            a
-                            passion for bringing people together through outstanding coffee and genuine hospitality.
-                        </p>
-                    </div>
-                </div>
-        </section>
-
-
-        <section id="Brand-Value">
-
-            <div class="container text-center">
-                <h1>B R A N D V A L U E</h1>
-
-                <div class="row ">
-                    <div class="col col-lg-6  ">
-                        <h2>QUALITY </h2>
-
-                    </div>
-                    <div class="col  col-lg-6  ">
-                        <h2>INNOVATION</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col col-lg-6 col-md-4">
-                        <p>We are committed to using premium ingredients and maintaining the highest standards in every
-                            cup
-                            we
-                            serve.
-                        </p>
-                    </div>
-                    <div class="col col-lg-6 col-md-4">
-                        <P>We continuously explore new flavors, brewing techniques, and ideas to create unique coffee
-                            experiences.
-                        </P>
-                    </div>
-                </div>
-
-                <div class="row ">
-                    <div class="col col-lg-12  ">
-                        <h2>INCLUSITIVITY </h2>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col col-lg-12 col-md-4">
-                        <P> We welcome everyone with warmth and respect, creating a comfortable space where every guest
-                            feels
-                            valued and connected.
-                        </P>
-                    </div>
-
-                </div>
-
-        </section>
-
-
-        <div class="footer-wrap">
-                            <div class="background-footer">
-                <img src="image/color_2c1810.png" alt="">
-            </div>
-
-            <footer id="footer">
-
-                <div class="footer-top">
-                    <div class="container">
-
-                        <div class="row">
-                            <div class="col-12 col-md-4 mb-4">
-                                <h3>About Info</h3>
-                                <p>At Caffeine Cove, we serve handcrafted coffee and freshly prepared beverages in a
-                                    cozy
-                                    and relaxing environment</p>
-                                <ul>
-                                    <li><i class="fa-solid fa-location-dot"></i> Address : Jordan-Ammann</li>
-                                    <li><i class="fa-regular fa-envelope-open"></i> Email : yazan.misk@gmail.com</li>
-                                    <li><i class="fa-solid fa-phone"></i> Phone : <a
-                                            href="tel:+00962798690208">+00962798690208</a> </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-12 col-md-4 mb-4">
-                                <h3>Quick Info</h3>
-                                <ul class="Info-quick">
-                                    <li> <a href="index.html"> Home</a></li>
-                                    <li><a href="about.html"> About</a> </li>
-                                    <li> <a href="menu.html"> Menu</a></li>
-                                    <li> <a href="testimonials.html"> Testimonials</a></li>
-                                    <li> <a href="contact.html"> Contact</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-12 col-md-4 mb-4 ">
-                                <h3> Follow Us On</h3>
-                                <ul>
-                                    <li> <i class="fa-brands fa-facebook"></i> <a
-                                            href="https://www.facebook.com/">Facebook</a></li>
-                                    <li><i class="fa-brands fa-twitter"></i><a
-                                            href="https://www.Twitter.com/">Twitter</a>
-                                    </li>
-                                    <li> <i class="fa-brands fa-youtube"></i> <a
-                                            href="https://www.youtube.com/">Youtupe</a>
-                                    </li>
-                                    <li><i class="fa-brands fa-instagram"></i> <a
-                                            href="https://www.instagram.com/">Instgram</a></li>
-                                    <li><i class="fa-brands fa-pinterest"></i> <a
-                                            href="https://www.pinterest.com/">Pinterest</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-            </footer>
+        <div class="row">
+          <div class="col col-lg-6 col-md-6">
+            <h2>QUALITY</h2>
+          </div>
+          <div class="col col-lg-6 col-md-6">
+            <h2>INNOVATION</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-6 col-md-6">
+            <p>
+              We are committed to using premium ingredients and maintaining the
+              highest standards in every cup we serve.
+            </p>
+          </div>
+          <div class="col col-lg-6 col-md-6">
+            <p>
+              We continuously explore new flavors, brewing techniques, and ideas
+              to create unique coffee experiences.
+            </p>
+          </div>
         </div>
 
+        <div class="row">
+          <div class="col col-lg-12">
+            <h2>INCLUSITIVITY</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-12 col-md-12">
+            <p>
+              We welcome everyone with warmth and respect, creating a
+              comfortable space where every guest feels valued and connected.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-wrap">
+      <div class="background-footer">
+        <img src="image/color_2c1810.png" alt="" />
+      </div>
+      <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row justify-content-space-between">
+              <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <h3>About Info</h3>
+                <p>
+                  At Caffeine Cove, we serve handcrafted coffee and freshly
+                  prepared beverages in a cozy and relaxing environment
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i> Address :
+                    Jordan-Ammann
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-envelope-open"></i> Email :
+                    yazan.misk@gmail.com
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-phone"></i> Phone :
+                    <a href="tel:+00962798690208"> +00962798690208</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <h3 class="line-quick">Quick Info</h3>
+                <ul class="Info-quick">
+                  <li><a href="index.html"> Home</a></li>
+                  <li><a href="about.html"> About</a></li>
+                  <li><a href="menu.html"> Menu</a></li>
+                  <li><a href="testimonials.html"> Testimonials</a></li>
+                  <li><a href="contact.html"> Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                <h3>Follow Us On</h3>
+                <ul class="follow-link">
+                  <li>
+                    <a href="https://www.facebook.com/"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.Twitter.com/"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.pinterest.com/"
+                      ><i class="fa-brands fa-pinterest"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-overlay" id="cart-overlay"></div>
 
-
-
-<div class="cart" id="cart">
-
-    <div class="cart-header">
+    <div class="cart" id="cart">
+      <div class="cart-header">
         <h2>Your Order</h2>
 
         <button class="close-cart" id="close-cart">
-            <i class="fa-solid fa-xmark"></i>
+          <i class="fa-solid fa-xmark"></i>
         </button>
-    </div>
+      </div>
 
-    <div class="cart-items" id="cart-items">
+      <div class="cart-items" id="cart-items">
+        <p class="empty-cart">Your cart is empty</p>
+      </div>
 
-        <p class="empty-cart">
-            Your cart is empty
-        </p>
-
-    </div>
-
-    <div class="cart-footer">
-
+      <div class="cart-footer">
         <div class="cart-total">
-            <span>Total:</span>
-            <span id="cart-total">$0.00</span>
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
         </div>
 
-        <button class="clear-cart" id="clear-cart">
-            Clear Cart
-        </button>
-
+        <button class="clear-cart" id="clear-cart">Clear Cart</button>
+      </div>
     </div>
-
-</div>
-
-
-    
-</body>
-
+  </body>
 </html>
-
-<!--
-
-        <section id="mission">
-
-            <div class="container">
-
-                <div class="mission">
-                    <div class="dream">
-                        <div class="col-lg-6 col-md-4">
-
-                            <h2 class="head-mission"> M I S S I O N </h2>
-                            <h2 class="head-vision">V I S I O N</h2>
-                        </div>
-
-                    </div>
-                    <div class="mission-vision-descrption">
-                        <div class="mision-descrption">
-                            <p> Our mission is to serve exceptional coffee made from carefully selected beans while
-                                creating
-                                a
-                                welcoming atmosphere where every guest feels valued and every visit becomes a memorable
-                                experience.
-                            </p>
-                        </div>
-                        <div class="vision-descrption">
-                            <p>Our vision is to become a trusted coffee destination, recognized for quality, innovation,
-                                and
-                                a
-                                passion for bringing people together through outstanding coffee and genuine hospitality.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="Brand-Value">
-            <div class="container">
-                <h1>B R A N D V A L U E</h1>
-
-                <div class="brand-value">
-                    <div class="Quality-descrption">
-                        <h2> QUALITY</h2>
-                        <p>We are committed to using premium ingredients and maintaining the highest standards in every
-                            cup
-                            we
-                            serve.
-                        </p>
-                    </div>
-
-                    <div class="innovation-descrption">
-                        <h2 class="line-innovation"> INNOVATION</h2>
-                        <P>We continuously explore new flavors, brewing techniques, and ideas to create unique coffee
-                            experiences.
-                        </P>
-                    </div>
-
-                    <div class="Inclusitivity-descrption">
-                        <h2> INCLUSITIVITY </h2>
-                        <P> We welcome everyone with warmth and respect, creating a comfortable space where every guest
-                            feels
-                            valued and connected.
-                        </P>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
--->

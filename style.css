@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
 
 ul {
     list-style: none;
@@ -13,11 +7,6 @@ a {
     text-decoration: none;
 }
 
-.first {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 .page-background {
     position: fixed;
@@ -79,153 +68,33 @@ select,
 
 .header-video {
   width: 100%;
-  height: 75vh;
+  height: 90vh;
   object-fit: cover;
   display: block;
 }
-
 /* Home page --------------------------------------------------------------------------------------*/
 /*part Two--------------------*/
-
-
-
- /*
- 
-
-
-
-
-
-
-
-.discrpion {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-
-}
-
-
-
-    
-*/
-
 .word{
     padding: 100px 50px;
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
-
-.word h3{
-    margin-top: 10px;
-    font-size: 40px;
-}
-
-
 /* part Three------------------------*/
-
-
-/*.full-story {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 120px;
-}
-
-
-
-.full-story img {
-    width: auto;
-    height: 200px;
-    margin-top: 50px;
-    margin-left: 100px;
-}
-
-.Story-discrption {
-    padding: 50px;
-}
-
-.Story-discrption h1 {
-    padding: 20px;
-    margin: 0 -20px;
-
-
-}
-
-.Story-discrption h3 {
-
-    color: dimgrey;
-}
-*/
-
-
-
-
 .Story{
     padding: 100px 50px;
 
 }
 .Story p{
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 100px;
     font-size: 20px;
 }
-
 /*part Four---------------------------------------------*/
-
-/*#best-selary {
-    padding: 80px;
-}
-
-
-.discrpion-salary img {
-    width: auto;
-    height: 400px;
-    border-radius: 30px;
-    margin: 200px 0;
-}
-
-
-.discrpion-salary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.Explain-salary {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.Explain-salary h1,
-.Explain-salary h2,
-.Explain-salary h3 {
-    margin: 0 0 12px 0;
-
-}
-
-.Explain-salary h1 {
-    color: #444444;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.Explain-salary h2 {
-
-    color: #6F4E37;
-
-}
-
-.Explain-salary h3 {
-    color: #4A4A4A;
-}
-*/
-
 .best-selary {
-    padding: 50px 50px;
+    padding: 100px 50px;
+        margin-top: 60px;
+    margin-bottom: 100px;
+
 }
 
 .best-selary h2,h3 {
@@ -238,117 +107,10 @@ select,
     border-radius: 40px;
 }
 
+.best-selary{
+    font-size: 20px;
+}
 /*part Five---------------------------------------------*/
-
-
-/*.location-discrption img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-    display: block;
-    margin-bottom: 100px;
-
-}
-.image-navbar{
-    width: 100%;
-    height:300px;
-
-}
-.location-discrption {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 50vh;
-    padding: 10px;
-    margin-bottom: 150px;
-    margin-top: 150px;
-}
-.insider {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    height: 100%;
-    flex-wrap: wrap;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-
-}
-.info-container,
-.time-open,
-.info-contact-us {
-    position: relative;
-    text-align: center;
-    color: white;
-
-    width: 280px;
-    height: 220px;
-    box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.12);
-    padding: 35px 50px;
-    border-radius: 20px;
-    border: 1px solid rgba(13, 7, 1, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#location i {
-    font-size: 45px;
-    color: white;
-    margin-bottom: 15px;
-}
-
-#location h1 {
-    font-size: 32px;
-    margin-bottom: 10px 0;
-    color: white;
-}
-
-#location p {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: white;
-}
-
-/////////////////////////////
-#location img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 100px;
-}
-
-.box-1 , .box-2 , .box-3{
-   color: black;
-    width: 180px;
-    height: 180px;
-}
-
-#location i {
-    font-size: 45px;
-    color: black;
-    margin-bottom: 15px;
-}
-#locationh1 {
-    font-size: 32px;
-    margin-bottom: 10px 0;
-    color: black;
-}
-
-#location p {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: black;
-}
-*/
 #location {
     position: relative;
     overflow: hidden;
@@ -356,7 +118,6 @@ select,
     min-height: 400px;
     display: flex;
     align-items: center;
-
 }
 
 #location img {
@@ -391,7 +152,7 @@ select,
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    gap: 30px;
+    gap: 120px;
 }
 
 .big-box .col {
@@ -435,12 +196,9 @@ select,
 #sign-up {
     position: relative;
     min-height: 400px;
-
     display: flex;
     align-items: center;
-
     overflow: hidden;
-
     padding: 50px 0;
     margin: 100px 0;
 }
@@ -448,32 +206,23 @@ select,
 /* الصورة في الخلفية */
 #sign-up > img {
     position: absolute;
-
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     object-fit: cover;
-
     z-index: 1;
 }
 
 /* طبقة شفافة فوق الصورة */
 #sign-up::after {
     content: "";
-
     position: absolute;
-
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background: rgba(0, 0, 0, 0.45);
-
     z-index: 2;
 }
 
@@ -506,48 +255,33 @@ select,
 /* الفورم */
 .form-descrption {
     display: flex;
-
     align-items: center;
-
     gap: 10px;
-
     margin: 0 auto;
 }
 
 /* input */
 .form-descrption input {
     height: 55px;
-
     flex: 1;
-
     padding: 0 20px;
-
     border: none;
     border-radius: 8px;
-
     outline: none;
-
     font-size: 16px;
 }
 
 /* button */
 .form-descrption button {
     height: 55px;
-
     padding: 0 30px;
-
     border: none;
     border-radius: 8px;
-
     background-color: #a97037;
-
     color: white;
-
     font-size: 16px;
     font-weight: 600;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -788,11 +522,13 @@ select,
     color: #8c5a2d;
 }
 
+
+/*footer----------------------------------------------------------*/
 .footer-wrap {
     position: relative;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    width: 100%;
     min-height: 400px;
+    overflow: hidden;
 }
 
 .background-footer {

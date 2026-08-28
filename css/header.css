@@ -6,190 +6,115 @@ a {
     text-decoration: none;
 }
 
-.first {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/*
-
-.header-content {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 90%;
-    padding: 40px 5%;
-
-}
-
-.container-Homepage {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    top: 40px;
-}
-
-
-
-
-.behind-logo img {
-    width: 300px;
-    height: 100px;
-}
-
-
-
-
-
-.menu-hover {
-    position: relative;
-}
-
-.menu-hover .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 150px;
-    padding: 10px 0;
-    margin: 0;
-    background-color: black;
-    border-radius: 8px;
-    list-style: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.menu-hover:hover .dropdown-menu {
-    display: block;
-}
-
-.menu-hover .dropdown-menu li {
-    padding: 0;
-}
-
-.menu-hover .dropdown-menu a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: white;
-}
-
-.menu-hover .dropdown-menu a:hover {
-    background-color: #a97037;
-}
-
-.header-links {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-size: 20px;
-}
-
-
-.header-links .nav-item>a {
-
-    position: relative;
-    text-decoration: none;
-
-    color: white;
-    padding: 0px 50px;
-    text-decoration: none;
-    border-radius: 20px;
-
-}
-
-.header-links .nav-item>a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: width 0.3s ease;
-}
-
-.header-links .nav-item>a:hover::after {
-    width: 100%;
-
-}
-
-
-.d-flex button  {
-    position: fixed;
-    top: 95px;
-    background-color: #a97037;
-    color: white;
-    border-radius: 40px;
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    border: none;
-}
-
-.button-location button a {
-    color: white;
-    text-decoration: none;
-
-
-}
-*/
-
+/* =========================
+   Dropdown
+========================= */
 
 .dropdown-menu {
-    background-color: rgb(177, 112, 42);
+    background-color:#bb6b1b;
 }
+
+
+/* =========================
+   Navbar
+========================= */
 
 .navbar {
     position: fixed;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
+    width: 75%;
     z-index: 2;
 
-    width: 70%;
-
-    background: rgba(214, 129, 17, 0.139) !important;
+    background: rgba(146, 86, 8, 0.89) !important;
     backdrop-filter: blur(8px);
 }
 
-/* Hover effect for navbar links */
+
+/* Navbar links */
+
 .navbar-nav .nav-link {
     position: relative;
-    color: white !important;
     transition: color 0.3s ease;
 }
 
-/* The line */
-.navbar-nav .nav-link::after {
+
+/* Underline */
+
+.navbar-nav > .nav-item:not(.dropdown) .nav-link::after {
     content: "";
+
     position: absolute;
     left: 50%;
     bottom: 0;
+
     width: 0;
     height: 2px;
-    background-color: #a97037;
+
+    background-color: #201204;
+
     transform: translateX(-50%);
     transition: width 0.3s ease;
 }
 
-/* On hover */
-.navbar-nav .nav-link:hover::after {
+
+/* Hover underline */
+
+.navbar-nav > .nav-item:not(.dropdown) .nav-link:hover::after {
     width: 100%;
 }
+
+
+/* Active links */
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
     color: white;
 }
+
+
+/* =========================
+   Menu Dropdown
+========================= */
+
+.navbar-nav .dropdown-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    white-space: nowrap;
+    color: white !important;
+}
+
+
+/* Dropdown arrow */
+
+.navbar-nav .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+
+/* =========================
+   Find Us Button
+========================= */
+
+.link-find {
+    padding: 16px 10px;
+    font-size: 20px;
+}
+
+
+/* =========================
+   Cart
+========================= */
+
+.cart-button {
+    padding: 10px 20px;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+

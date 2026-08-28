@@ -6,33 +6,27 @@ a {
     text-decoration: none;
 }
 
-.first {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 
 .wood-background {
     width: 100%;
-    height: 250px;
+    max-height: 100vh;
     overflow: hidden;
 }
 
 .wood-background img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+    height: 50vh;
+    object-fit: cover !important;
+    margin: 0;
 }
 
-.gather-margin{
+.gather-margin {
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(8px);
-    padding: 35px 50px;
+    padding: 35px ;
     border-radius: 29px;
     border: 2px solid rgba(196, 139, 78, 5);
     margin-top: 20px;
@@ -43,18 +37,24 @@ a {
 
 }
 
-.gather{
-        padding: 20px 20px;
+.gather {
+    padding: 20px 20px;
 
 }
 
-.gather-margin img{
+.gather-margin img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-} 
+    border-radius: 10px;
+}
 
- .details h3 {
+.details{
+    margin-top: 50px;
+}
+
+
+.details h3 {
     margin-bottom: 10px;
     margin-top: 20px;
     gap: 10px;
@@ -66,7 +66,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 0;
-    margin-top: 15px;
+    margin-top: 80px;
 }
 
 .quantity button {
@@ -107,7 +107,8 @@ a {
     border-bottom: 1px solid #a97037;
 }
 
-.h2, h2 {
+.h2,
+h2 {
     padding: 50px 50px;
 }
 
