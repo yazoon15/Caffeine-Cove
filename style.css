@@ -1,0 +1,551 @@
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcq6g18U0v1SvmMU6N-G8O5YwiwKDxU1cW5GvcwXg0w&s=10); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /* لا تضع background هنا، خليه بس في الـ div */
+}
+
+.page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcq6g18U0v1SvmMU6N-G8O5YwiwKDxU1cW5GvcwXg0w&s=10); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    /* لا تضع background هنا، خليه بس في الـ div */
+}
+
+.cart-button,
+select,
+.btn-find  {
+    border-radius: 20px;
+    background-color: #a97037;
+    color: white;
+    text-decoration: none;
+    border: none;
+
+}
+.link-find{
+    color: white;
+}
+
+.video-pageone {
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.header-video {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  display: block;
+}
+/* Home page --------------------------------------------------------------------------------------*/
+/* part two------------------------*/
+.Story{
+    padding: 100px 50px;
+
+}
+
+.Story h1{
+
+margin-left: 150px;
+
+
+}
+.Story p{
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+
+/*part three---------------------------------------------*/
+.best-selary {
+    padding: 100px 50px;
+        margin-top: 60px;
+    margin-bottom: 100px;
+
+}
+
+.best-selary h2,h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
+.best-selary img{
+    position: relative;
+     right: -100px;
+    border-radius: 40px;
+}
+
+.best-selary{
+    font-size: 20px;
+}
+/*part Five---------------------------------------------*/
+#location {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#location img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* طبقة تعتيم فوق الصورة عشان النص يبين بوضوح */
+#location::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#location .container {
+    position: relative;
+    z-index: 3;
+}
+
+.big-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 120px;
+}
+
+.big-box .col {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    padding: 40px 25px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.big-box i {
+    font-size: 2.2rem;
+    color: #d98e35; /* برتقالي القهوة */
+    margin-bottom: 15px;
+}
+
+.big-box h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.big-box p {
+    font-size: 1rem;
+    color: #e6e6e6;
+    margin: 0;
+}
+
+
+
+/* part six-------------------------------------------------*/
+
+
+#sign-up {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 0;
+    margin: 100px 0;
+}
+
+/* الصورة في الخلفية */
+#sign-up > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* طبقة شفافة فوق الصورة */
+#sign-up::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
+}
+
+/* المحتوى فوق الصورة */
+#sign-up .container {
+    position: relative;
+
+    z-index: 3;
+}
+
+/* المحتوى */
+.sign-up-info {
+    width: 100%;
+}
+
+.sign-up-descrption {
+    text-align: center;
+}
+
+/* العنوان */
+.sign-up-descrption h1 {
+    color: white;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+/* الفورم */
+.form-descrption {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+/* input */
+.form-descrption input {
+    height: 55px;
+    flex: 1;
+    padding: 0 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* button */
+.form-descrption button {
+    height: 55px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #a97037;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-descrption button:hover {
+    background-color: #3b2415;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -420px;
+
+    width: 400px;
+    height: 100vh;
+
+    background-color: #fff;
+
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+
+    transition: right 0.3s ease;
+}
+
+.cart.active {
+    right: 0;
+}
+
+
+/* Cart Header */
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #a97037;
+    color: white;
+}
+
+.cart-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.close-cart {
+    border: none;
+    background: transparent;
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* Cart Items */
+
+.cart-items {
+    flex: 1;
+
+    padding: 20px;
+
+    overflow-y: auto;
+}
+
+.empty-cart {
+    text-align: center;
+
+    color: #777;
+
+    margin-top: 50px;
+}
+
+
+/* Cart Item */
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-info h3 {
+    margin: 0 0 5px;
+
+    font-size: 17px;
+}
+
+.cart-item-info p {
+    margin: 0;
+
+    color: #777;
+}
+
+.cart-item-price {
+    font-weight: bold;
+
+    color: #a97037;
+}
+
+
+/* Cart Footer */
+
+.cart-footer {
+    padding: 20px;
+
+    border-top: 1px solid #ddd;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+#cart-total {
+    color: #a97037;
+}
+
+
+/* Clear Button */
+
+.clear-cart {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    background-color: #a97037;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+
+.clear-cart:hover {
+    background-color: #8c5a2d;
+}
+
+
+/* Overlay */
+
+.cart-overlay {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 9998;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+}
+
+.cart-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Cart Count */
+
+.cart-button {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+
+    top: -8px;
+    right: -8px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #a97037;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.delete-item {
+    border: none;
+    background: transparent;
+
+    color: #a97037;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.delete-item:hover {
+    color: #8c5a2d;
+}
+
+
+/*footer----------------------------------------------------------*/
+.footer-wrap {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.background-footer {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.background-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

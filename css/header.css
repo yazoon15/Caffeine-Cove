@@ -1,0 +1,120 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   Dropdown
+========================= */
+
+.dropdown-menu {
+    background-color:#bb6b1b;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    z-index: 2;
+
+    background: rgba(146, 86, 8, 0.89) !important;
+    backdrop-filter: blur(8px);
+}
+
+
+/* Navbar links */
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+/* Underline */
+
+.navbar-nav > .nav-item:not(.dropdown) .nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #201204;
+
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+
+/* Hover underline */
+
+.navbar-nav > .nav-item:not(.dropdown) .nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* Active links */
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: white;
+}
+
+
+/* =========================
+   Menu Dropdown
+========================= */
+
+.navbar-nav .dropdown-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    white-space: nowrap;
+    color: white !important;
+}
+
+
+/* Dropdown arrow */
+
+.navbar-nav .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+
+/* =========================
+   Find Us Button
+========================= */
+
+.link-find {
+    padding: 16px 10px;
+    font-size: 20px;
+}
+
+
+/* =========================
+   Cart
+========================= */
+
+.cart-button {
+    padding: 10px 20px;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
