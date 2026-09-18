@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/About-us.css">
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/about-us.css" />
-  <link rel="stylesheet" href="css/footer.css" />
   <title>Caffeine Cove</title>
 
   <!-- font awesome-->
@@ -34,96 +34,108 @@
       class="object-fit-scale border rounded" alt="" />
   </div>
 
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-secondary">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-          <img src="image/coffeine_cove_logo_white.png" alt="Caffeine Cove" width="200" height="50" />
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="image/coffeine_cove_logo_white.png" alt="Caffeine Cove" width="200" height="50">
+      </a>
+
+      <!-- Mobile Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <!-- Center Menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="menu.html">
+              Menu
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="menu.html#hot-drink">
+                  Hot Drinks
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="menu.html#cold-drink">
+                  Cold Drinks
+                </a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="menu.html#bakery">
+                  Bakery
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="testimonials.html">
+              Testimonials
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">
+              Contact
+            </a>
+        </ul>
+
+
+        <!-- Right Buttons -->
+
+
+        <a class="button-findus" href="contact.html" class="btn-find">
+          FindUs
         </a>
 
-        <!-- Hamburger Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button id="cart-button" class="cart-button" type="button" aria-label="Open cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
         </button>
 
-        <!-- Navbar Content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Links -->
-          <ul class="navbar-nav mx-auto gap-5">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html"> Home </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" href="about.html"> About </a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Menu
-              </a>
-
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="menu.html#hot-drinks">
-                    Hot Drinks
-                  </a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="menu.html#cold-drinks">
-                    Cold Drinks
-                  </a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="menu.html#bakery">
-                    Bakery
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" href="testimonials.html">
-                Testimonials
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" href="contact.html"> Contact </a>
-            </li>
-          </ul>
-
-          <!-- Buttons -->
-          <form class="d-flex gap-2" role="search">
-            <button class="btn-find" type="button">
-              <a class="link-find" href="contact.html"> FindUs </a>
-            </button>
-
-            <button id="cart-button" class="cart-button" type="button" aria-label="Open cart">
-              <i class="fa-solid fa-cart-shopping"></i>
-
-              <span class="cart-count">0</span>
-            </button>
-          </form>
-        </div>
       </div>
-    </nav>
-  </header>
+
+    </div>
+  </nav>
+
 
   <section id="About-descrption">
-    <div class="container">
+
+    <div class="container text-center"> ">
       <div class="row">
-        <div class="logo-about col-lg-3 col-md-4 col-sm-6">
+        <div class="logo-about col-lg-3 col-md-12 col-sm-12">
           <img width="auto" height="200px" src="image/coffeine_cove_logo_round_orange.png" alt="" />
         </div>
-        <div class="message col-lg-9 col-md-4 col-sm-6">
-          <h1 class="lineone-about">BRAND MESSAGE</h1>
+        <div class="message col-lg-9 col-md-12 col-sm-12">
+          <h2 class="lineone-about">BRAND MESSAGE</h2>
+
           <p class="fw-medium">
+
             At Caffeine Cove, every cup is crafted to inspire comfort,
             connection, and unforgettable moments. We believe great coffee
             brings people together, creating a warm space where every visit
@@ -136,54 +148,54 @@
 
   <section id="mission">
     <div class="container text-center">
+
       <div class="row">
-        <div class="col col-lg-6 col-md-6 col-sm-6">
-          <h1 class="head-mission">MISSION</h1>
-        </div>
-        <div class="col col-lg-6 col-md-6 col-sm-6">
-          <h1 class="head-vision">VISION</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-lg-6 col-md-6">
-          <p class="text-light">
+
+        <!-- Mission -->
+        <div class="col-lg-6 col-md-12 col-12">
+          <h2 class="head-mission">MISSION</h2>
+
+          <p class="text-light fw-medium">
             Our mission is to serve exceptional coffee made from carefully
             selected beans while creating a welcoming atmosphere where every
             guest feels valued and every visit becomes a memorable experience.
           </p>
         </div>
-        <div class="col col-lg-6 col-md-6">
-          <p class="text-light">
+
+        <!-- Vision -->
+        <div class="col-lg-6 col-md-12 col-12">
+          <h2 class="head-vision">VISION</h2>
+
+          <p class="text-light fw-medium">
             Our vision is to become a trusted coffee destination, recognized
             for quality, innovation, and a passion for bringing people
             together through outstanding coffee and genuine hospitality.
           </p>
         </div>
+
       </div>
+
     </div>
   </section>
 
+
+
   <section id="Brand-Value">
     <div class="container text-center">
-      <h1>B R A N D V A L U E</h1>
+      <h2>BRANDVALUE</h2>
 
       <div class="row">
-        <div class="col col-lg-6 col-md-6">
-          <h2>QUALITY</h2>
-        </div>
-        <div class="col col-lg-6 col-md-6">
-          <h2>INNOVATION</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-lg-6 col-md-6">
-          <p>
+        <div class="col-lg-6 col-md-12 col-12">
+          <h3>QUALITY</h3>
+          <p class="text-light fw-medium">
             We are committed to using premium ingredients and maintaining the
             highest standards in every cup we serve.
           </p>
+
         </div>
-        <div class="col col-lg-6 col-md-6">
-          <p>
+        <div class="col-lg-6 col-md-12 col-12">
+          <h3>INNOVATION</h3>
+          <p class="text-light fw-medium">
             We continuously explore new flavors, brewing techniques, and ideas
             to create unique coffee experiences.
           </p>
@@ -192,15 +204,12 @@
 
       <div class="row">
         <div class="col col-lg-12">
-          <h2>INCLUSITIVITY</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-lg-12 col-md-12">
-          <p>
+          <h3>INCLUSITIVITY</h3>
+          <p class="text-light fw-medium">
             We welcome everyone with warmth and respect, creating a
             comfortable space where every guest feels valued and connected.
           </p>
+
         </div>
       </div>
     </div>
@@ -208,63 +217,46 @@
 
   <div class="footer-wrap">
     <div class="background-footer">
-      <img src="image/color_2c1810.png" alt="" />
+      <img src="image/color_2c1810.png" alt="">
     </div>
     <footer id="footer">
+
       <div class="footer-top">
-        <div class="container">
-          <div class="row justify-content-space-between">
-            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+        <div class="container ">
+
+          <div class="row   justify-content-space-between ">
+            <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
               <h3>About Info</h3>
-              <p>
-                At Caffeine Cove, we serve handcrafted coffee and freshly
-                prepared beverages in a cozy and relaxing environment
-              </p>
+              <p>At Caffeine Cove, we serve handcrafted coffee and freshly prepared beverages in a
+                cozy
+                and relaxing environment</p>
               <ul>
-                <li>
-                  <i class="fa-solid fa-location-dot"></i> Address :
-                  Jordan-Ammann
-                </li>
-                <li>
-                  <i class="fa-regular fa-envelope-open"></i> Email :
-                  yazan.misk@gmail.com
-                </li>
-                <li>
-                  <i class="fa-solid fa-phone"></i> Phone :
-                  <a href="tel:+00962798690208"> +00962798690208</a>
-                </li>
+                <li><i class="fa-solid fa-location-dot"></i><a href="contact.html"> Address : Jordan-Ammann</a></li>
+               <li><i class="fa-regular fa-envelope-open"></i> <a href="email:yazan.misk@gmail.com"> Email : yazan.misk@gmail.com</a></li>
+                <li><i class="fa-solid fa-phone"></i> Phone : <a href="tel:+00962798690208">
+                    +00962798690208</a> </li>
               </ul>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+            <div class=" col-lg-4 col-md-12 col-sm-12 mb-4">
               <h3 class="line-quick">Quick Info</h3>
               <ul class="Info-quick">
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="about.html"> About</a></li>
-                <li><a href="menu.html"> Menu</a></li>
-                <li><a href="testimonials.html"> Testimonials</a></li>
-                <li><a href="contact.html"> Contact</a></li>
+                <li> <a href="index.html"> Home</a></li>
+                <li><a href="about.html"> About</a> </li>
+                <li> <a href="menu.html"> Menu</a></li>
+                <li> <a href="testimonials.html"> Testimonials</a></li>
+                <li> <a href="contact.html"> Contact</a></li>
               </ul>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
-              <h3>Follow Us On</h3>
+            <div class=" col-lg-4 col-md-12 col-sm-12 mb-4">
+              <h3> Follow Us On</h3>
               <ul class="follow-link">
-                <li>
-                  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.Twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
-                </li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.Twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
               </ul>
             </div>
           </div>

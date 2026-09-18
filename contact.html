@@ -8,7 +8,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="css/Contact.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="style.css">
 
@@ -36,115 +36,95 @@
 
         <img src="image/top-5-creative-ideas-for-small-coffee-shop-interior-design.webp" class="object-fit-scale border rounded" alt="">
     </div>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
 
-                <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="image/coffeine_cove_logo_white.png" alt="Caffeine Cove" width="200" height="50">
+            </a>
 
-                    <!-- Logo -->
-                    <a class="navbar-brand" href="index.html">
-                        <img src="image/coffeine_cove_logo_white.png" alt="Caffeine Cove" width="200" height="50">
-                    </a>
+            <!-- Mobile Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
 
-                    <!-- Hamburger Button -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-
-                        <span class="navbar-toggler-icon"></span>
-
-                    </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
 
-                    <!-- Navbar Content -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Center Menu -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                        <!-- Links -->
-                        <ul class="navbar-nav mx-auto gap-5">
+                <ul class="navbar-nav mb-2 mb-lg-0">
 
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html">
-                                    Home
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="menu.html">
+                            Menu
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="menu.html#hot-drink">
+                                    Hot Drinks
                                 </a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link active" href="about.html">
-                                    About
+                            <li>
+                                <a class="dropdown-item" href="menu.html#cold-drink">
+                                    Cold Drinks
                                 </a>
                             </li>
 
-                            <li class="nav-item dropdown">
-
-                                <a class="nav-link dropdown-toggle" href="menu.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Menu
-                                </a>
-
-                                <ul class="dropdown-menu">
-
-                                    <li>
-                                        <a class="dropdown-item" href="menu.html#hot-drinks">
-                                            Hot Drinks
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a class="dropdown-item" href="menu.html#cold-drinks">
-                                            Cold Drinks
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a class="dropdown-item" href="menu.html#bakery">
-                                            Bakery
-                                        </a>
-                                    </li>
-
-                                </ul>
-
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link active" href="testimonials.html">
-                                    Testimonials
+                            <li>
+                                <a class="dropdown-item" href="menu.html#bakery">
+                                    Bakery
                                 </a>
                             </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link active" href="contact.html">
-                                    Contact
-                                </a>
-                            </li>
-
                         </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="testimonials.html">
+                            Testimonials
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">
+                            Contact
+                        </a>
+                </ul>
 
 
-                        <!-- Buttons -->
-                        <form class="d-flex gap-2" role="search">
+                <!-- Right Buttons -->
 
-                            <button class="btn-find" type="button">
-                                <a class="link-find" href="contact.html">
-                                    FindUs
-                                </a>
-                            </button>
 
-                            <button id="cart-button" class="cart-button" type="button" aria-label="Open cart">
+                <a class="button-findus" href="contact.html" class="btn-find">
+                    FindUs
+                </a>
 
-                                <i class="fa-solid fa-cart-shopping"></i>
+                <button id="cart-button" class="cart-button" type="button" aria-label="Open cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </button>
 
-                                <span class="cart-count">0</span>
+            </div>
 
-                            </button>
-
-                        </form>
-
-                    </div>
-
-                </div>
-
-            </nav>
-        </header>
+        </div>
+    </nav>
 
 
     <div class="container">
@@ -190,20 +170,20 @@
                 <div class="container ">
 
                     <div class="row   justify-content-space-between ">
-                        <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
+                        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
                             <h3>About Info</h3>
                             <p>At Caffeine Cove, we serve handcrafted coffee and freshly prepared beverages in a
                                 cozy
                                 and relaxing environment</p>
                             <ul>
-                                <li><i class="fa-solid fa-location-dot"></i> Address : Jordan-Ammann</li>
-                                <li><i class="fa-regular fa-envelope-open"></i> Email : yazan.misk@gmail.com</li>
+                                <li><i class="fa-solid fa-location-dot"></i><a href="contact.html"> Address : Jordan-Ammann</a></li>
+                                <li><i class="fa-regular fa-envelope-open"></i> <a href="email:yazan.misk@gmail.com"> Email : yazan.misk@gmail.com</a></li>
                                 <li><i class="fa-solid fa-phone"></i> Phone : <a href="tel:+00962798690208">
                                         +00962798690208</a> </li>
                             </ul>
                         </div>
 
-                        <div class=" col-lg-4 col-md-4 col-sm-12 mb-4">
+                        <div class=" col-lg-4 col-md-12 col-sm-12 mb-4">
                             <h3 class="line-quick">Quick Info</h3>
                             <ul class="Info-quick">
                                 <li> <a href="index.html"> Home</a></li>
@@ -214,7 +194,7 @@
                             </ul>
                         </div>
 
-                        <div class=" col-lg-4 col-md-4 col-sm-12 mb-4">
+                        <div class=" col-lg-4 col-md-12 col-sm-12 mb-4">
                             <h3> Follow Us On</h3>
                             <ul class="follow-link">
                                 <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>

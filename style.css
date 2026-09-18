@@ -1,13 +1,7 @@
 
-ul {
-    list-style: none;
-}
+    
 
-a {
-    text-decoration: none;
-}
-
-
+/*  
 .page-background {
     position: fixed;
     top: 0;
@@ -24,41 +18,8 @@ a {
 html, body {
     margin: 0;
     padding: 0;
-    /* لا تضع background هنا، خليه بس في الـ div */
 }
 
-.page-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    height: 100%;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZcq6g18U0v1SvmMU6N-G8O5YwiwKDxU1cW5GvcwXg0w&s=10); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1; 
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    /* لا تضع background هنا، خليه بس في الـ div */
-}
-
-.cart-button,
-select,
-.btn-find  {
-    border-radius: 20px;
-    background-color: #a97037;
-    color: white;
-    text-decoration: none;
-    border: none;
-
-}
-.link-find{
-    color: white;
-}
 
 .video-pageone {
   width: 100%;
@@ -72,9 +33,10 @@ select,
   object-fit: cover;
   display: block;
 }
+*/
 /* Home page --------------------------------------------------------------------------------------*/
 /* part two------------------------*/
-.Story{
+/*.Story{
     padding: 100px 50px;
 
 }
@@ -92,7 +54,7 @@ margin-left: 150px;
 
 
 /*part three---------------------------------------------*/
-.best-selary {
+/*.best-selary {
     padding: 100px 50px;
         margin-top: 60px;
     margin-bottom: 100px;
@@ -115,7 +77,8 @@ margin-left: 150px;
     font-size: 20px;
 }
 /*part Five---------------------------------------------*/
-#location {
+
+/*#/*location {
     position: relative;
     overflow: hidden;
     padding: 100px 0;
@@ -134,7 +97,6 @@ margin-left: 150px;
     z-index: 1;
 }
 
-/* طبقة تعتيم فوق الصورة عشان النص يبين بوضوح */
 #location::before {
     content: '';
     position: absolute;
@@ -174,7 +136,7 @@ margin-left: 150px;
 
 .big-box i {
     font-size: 2.2rem;
-    color: #d98e35; /* برتقالي القهوة */
+    color: #d98e35; 
     margin-bottom: 15px;
 }
 
@@ -195,7 +157,7 @@ margin-left: 150px;
 
 
 /* part six-------------------------------------------------*/
-
+/*
 
 #sign-up {
     position: relative;
@@ -207,7 +169,6 @@ margin-left: 150px;
     margin: 100px 0;
 }
 
-/* الصورة في الخلفية */
 #sign-up > img {
     position: absolute;
     top: 0;
@@ -218,7 +179,6 @@ margin-left: 150px;
     z-index: 1;
 }
 
-/* طبقة شفافة فوق الصورة */
 #sign-up::after {
     content: "";
     position: absolute;
@@ -230,14 +190,12 @@ margin-left: 150px;
     z-index: 2;
 }
 
-/* المحتوى فوق الصورة */
 #sign-up .container {
     position: relative;
 
     z-index: 3;
 }
 
-/* المحتوى */
 .sign-up-info {
     width: 100%;
 }
@@ -246,7 +204,6 @@ margin-left: 150px;
     text-align: center;
 }
 
-/* العنوان */
 .sign-up-descrption h1 {
     color: white;
 
@@ -256,7 +213,6 @@ margin-left: 150px;
     margin-bottom: 30px;
 }
 
-/* الفورم */
 .form-descrption {
     display: flex;
     align-items: center;
@@ -264,7 +220,6 @@ margin-left: 150px;
     margin: 0 auto;
 }
 
-/* input */
 .form-descrption input {
     height: 55px;
     flex: 1;
@@ -275,7 +230,6 @@ margin-left: 150px;
     font-size: 16px;
 }
 
-/* button */
 .form-descrption button {
     height: 55px;
     padding: 0 30px;
@@ -298,7 +252,7 @@ margin-left: 150px;
    CART
 ========================= */
 
-.cart {
+/*.cart {
     position: fixed;
     top: 0;
     right: -420px;
@@ -323,7 +277,6 @@ margin-left: 150px;
 }
 
 
-/* Cart Header */
 
 .cart-header {
     display: flex;
@@ -353,7 +306,6 @@ margin-left: 150px;
 }
 
 
-/* Cart Items */
 
 .cart-items {
     flex: 1;
@@ -372,7 +324,6 @@ margin-left: 150px;
 }
 
 
-/* Cart Item */
 
 .cart-item {
     display: flex;
@@ -403,7 +354,6 @@ margin-left: 150px;
 }
 
 
-/* Cart Footer */
 
 .cart-footer {
     padding: 20px;
@@ -426,7 +376,6 @@ margin-left: 150px;
 }
 
 
-/* Clear Button */
 
 .clear-cart {
     width: 100%;
@@ -450,7 +399,6 @@ margin-left: 150px;
 }
 
 
-/* Overlay */
 
 .cart-overlay {
     position: fixed;
@@ -477,7 +425,6 @@ margin-left: 150px;
 }
 
 
-/* Cart Count */
 
 .cart-button {
     position: relative;
@@ -528,7 +475,7 @@ margin-left: 150px;
 
 
 /*footer----------------------------------------------------------*/
-.footer-wrap {
+/*.footer-wrap {
     position: relative;
     width: 100%;
     min-height: 400px;

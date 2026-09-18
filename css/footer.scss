@@ -1,0 +1,83 @@
+
+#footer {
+    background-image: url("../image/color_2c1810.png");
+    background-size: cover;
+    background-position: center;
+
+    .footer-top {
+
+        p,
+        li,
+        a {
+            color: #c9beae !important;
+        }
+
+        h3 {
+            color: #a97037;
+        }
+
+        i {
+            color:#a97037 ;
+            width: 18px;
+            text-align: center;
+        }
+
+        a {
+            transition: color 0.3s ease;
+
+        }
+    }
+}
+// Responsive
+@media (max-width: 991px) {
+
+    #footer {
+
+        .footer-top {
+
+            .container {
+                text-align: center;
+            }
+
+            .row > div {
+                text-align: center;
+                margin-left: 0;
+            }
+
+            h3 {
+                text-align: center;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
+            p {
+                text-align: center;
+            }
+
+            ul {
+                justify-content: center;
+            }
+
+            .list-unstyled li {
+                justify-content: center;
+            }
+
+            // Quick Info
+            .Info-quick {
+                li {
+                    justify-content: center;
+
+                    a {
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+
+            // Social Media
+            .follow-link {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
